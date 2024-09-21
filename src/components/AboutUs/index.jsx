@@ -8,16 +8,16 @@ const AboutUS = () => {
   return (
     <>
       <div className="md:flex  bg-primary">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 overflow-hidden">
           <img
             src={pic}
             alt="nail tech working"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
           />
         </div>
         <div className="md:w-1/2 py-24 px-8 lg:px-14 xl:px-20">
           <div className="flex flex-col gap-6">
-            <h3 className="text-[30px] text-[#ce7f86] font-amatic font-bold lg:text-[40px]">
+            <h3 className="text-[30px] text-darkPrimary font-amatic font-bold lg:text-[40px]">
               About us
             </h3>
             <h2 className="text-[34px] uppercase font-serif text-secondary">
@@ -38,32 +38,32 @@ const AboutUS = () => {
               </li>
               <li>&gt; Resolve and unsatisfactory experience immediately</li>
             </ul>
-            <p className="py-2 border-b-4 border-lightPrimary w-[150px] uppercase text-[#ce7f86]">
+            <p className="py-2 border-b-4 border-lightPrimary w-[150px] uppercase text-darkPrimary">
               Connect with us
             </p>
             <div className="flex gap-6">
               <Link>
                 <FaWhatsapp
                   size={24}
-                  className="hover:text-[#ce7f86] hover:scale-150"
+                  className="hover:text-darkPrimary hover:scale-150"
                 />
               </Link>
               <Link>
                 <FaInstagram
                   size={24}
-                  className="hover:text-[#ce7f86] hover:scale-150"
+                  className="hover:text-darkPrimary hover:scale-150"
                 />
               </Link>
               <Link>
                 <FaFacebookF
                   size={24}
-                  className="hover:text-[#ce7f86] hover:scale-150"
+                  className="hover:text-darkPrimary hover:scale-150"
                 />
               </Link>
               <Link>
                 <FaTiktok
                   size={24}
-                  className="hover:text-[#ce7f86] hover:scale-150"
+                  className="hover:text-darkPrimary hover:scale-150"
                 />
               </Link>
             </div>

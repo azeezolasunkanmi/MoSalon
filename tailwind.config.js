@@ -9,6 +9,7 @@ export default {
         secondary: "#0b132b", //black
         tertiary: "#3a506b",
         lightPrimary: "#faefed",
+        darkPrimary: "#ce7f86",
         white: "#ffffff",
         dimWhite: "rgba(9, 151, 124, 0.1)",
       },

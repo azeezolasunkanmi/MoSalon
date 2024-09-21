@@ -68,3 +68,113 @@ export const servicesContent = [
     image: img4,
   },
 ];
+
+// GALLERY NAILS
+
+export const nails = [
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/boho-wedding-nails-designed-freespirited-brides_1268167-1053.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/woman-showing-her-beautiful-nails_23-2148697087.jpg?t=st=1726253678~exp=1726257278~hmac=1421ff73ff2ad15296eedc1ba4c1fcd20db080b09c6d5f20442aca62a057ba5d&w=826",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/womans-nails-with-black-pink-design_959961-9670.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/afro-american-woman-hand-with-flowers-painted-her-long-nails-summer-themed-nail-art_1168752-1816.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-nails_959961-10719.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/pink-blue-french-manicure-with-painted-clouds_1264676-34.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/woman-with-pink-nails-that-says-i-love-you-nails_959961-10692.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820448.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/woman-with-green-nails-that-says-word-nails_959961-10708.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/woman-with-long-nails-that-has-purple-manicure-her-nails_959961-10770.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/pink-blue-french-manicure-with-painted-clouds_1264676-35.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-with-flower_23-2149820440.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/trendy-creative-nail-designs-every-style-stunning-nail-art-creations_1245763-78162.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/close-up-manicure-blue-background_926199-4207599.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-nails_959961-8244.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-top-right-corner_744810-306.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-with-autumn-leaf_23-2149820396.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/beautiful-womans-hands-with-spring-summer-floral-nail-design_1190079-800.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820449.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/nl-polish-finger-make-up-beauty-cosmetic-leaking_1311477-151606.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/dramatic-stiletto-nails-with-pink-black-design-embodying-bold-fashion-edgy-sophistication_113876-14266.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/premium-photo/healthy-beautiful-manicure-with-cream_1336671-17056.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820447.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/healthy-beautiful-manicure-blossom-flowers_23-2148766553.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+  },
+  {
+    category: "",
+    src: "https://img.freepik.com/free-photo/close-up-hand-with-french-model-nails_23-2149311564.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+  },
+];
