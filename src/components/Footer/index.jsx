@@ -57,7 +57,7 @@ const Footer = () => {
           <p>Tuesday - Saturday: 10am - 9pm</p>
           <p>Sunday: 2pm - 9pm</p>
         </div>
-        <div className="md:w-[300px] flex flex-col gap-4 mt-6">
+        <div className="md:w-[250px] flex flex-col gap-4 mt-6">
           <h2 className="text-darkPrimary uppercase font-medium">
             QUICK LINKS
           </h2>

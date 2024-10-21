@@ -4,22 +4,22 @@ import StudioContent from "../../components/ServiceCard/StudioContent";
 import HomeServiceContent from "../../components/ServiceCard/HomeServiceContent";
 import TrainingContent from "../../components/ServiceCard/TrainingContent";
 import Footer from "../../components/Footer";
+import PageHeader from "../../components/PageHeader";
 import Policy from "../../components/Policy";
+import bgHeader from "../../assets/background/bghero1.jpg";
 
 const ServicesPage = () => {
   const [screen, setScreen] = useState("studio");
 
   return (
     <div className="bg-lightPrimary">
-      <div className="bg-gradient py-8 md:py-16">
-        <h2 className="text-center text-[32px] lg:text-[42px] uppercase font-poppins font-semibold text-tertiary">
-          Services
-        </h2>
-        <p className="text-center text-tertiary px-8 md:w-[70%] xl:w-[60%] mx-auto lg:text-[18px]">
-          Indulge in a pampering experience where creativity and care meet to
-          bring out the best in your nails 🩷.
-        </p>
-      </div>
+      <PageHeader
+        title="Services"
+        src={bgHeader}
+        desc="Indulge in a pampering experience where creativity and care meet to
+          bring out the best in your nails 🩷."
+      />
+
       <div className="p-8 md:flex justify-center gap-10 bg-lightPrimary  px-4 lg:px-10 xl:px-28">
         <ServiceCard
           screen={screen}

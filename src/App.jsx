@@ -4,6 +4,8 @@ import RootLayout from "./pages/RootLayout";
 import ServicesPage from "./pages/ServicesPage";
 import PriceList from "./pages/PriceList";
 import Training from "./pages/Training";
+import Inspo from "./pages/Inspo";
+import BookNow from "./pages/BookNow";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="services" element={<ServicesPage />} />
           <Route path="price" element={<PriceList />} />
           <Route path="training" element={<Training />} />
+          <Route path="inspo" element={<Inspo />} />
+          <Route path="booknow" element={<BookNow />} />
         </Route>
       </Routes>
     </BrowserRouter>

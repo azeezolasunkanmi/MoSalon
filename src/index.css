@@ -19,6 +19,15 @@
   background: linear-gradient(90deg, #80bcf6 0%, #e68ec4 100%);
 }
 
+.timeSelected {
+  background: #ce7f86;
+  /* color: #fff; */
+}
+
+.disabledTime {
+  opacity: 0;
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -174,4 +183,8 @@
     transform: translateX(1000px);
     opacity: 0;
   }
+}
+
+.rdp-root {
+  --rdp-accent-color: #ce7f86; /* Change the accent color to indigo. */
 }

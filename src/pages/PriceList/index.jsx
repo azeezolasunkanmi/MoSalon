@@ -1,13 +1,14 @@
 import Footer from "../../components/Footer";
+import PageHeader from "../../components/PageHeader";
 
 const PriceList = () => {
   return (
     <div>
-      <div className="flex justify-center my-10">
-        <h2 className="text-center text-[35px] md:text-[45px] font-bold font-amatic border-b-4 border-primary inline-block">
-          PRICE LIST
-        </h2>
-      </div>
+      <PageHeader
+        title="Price List"
+        src="https://img.freepik.com/free-photo/arrangement-nail-care-accessories-salon_23-2148766592.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid"
+        desc="Explore our offerings below and discover how we can add that perfect touch to your nails 🩷."
+      />
       <div className="lg:flex justify-center gap-12 flex-wrap py-4 px-6 md:px-10 xl:px-28">
         <div className="lg:w-[40%]">
           <h3 className="mb-4 text-darkPrimary font-amatic font-bold text-[35px] md:text-[45px] border-b border-primary">

@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+
 const Services = () => {
   return (
     <div className="font-amatic py-10">
@@ -7,7 +10,13 @@ const Services = () => {
         </h2>
       </div>
       <div className="p-4 md:flex justify-center gap-10 mt-14">
-        <div className="max-w-[300px] text-center mx-auto lg:mx-0">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="max-w-[300px] text-center mx-auto lg:mx-0"
+        >
           <p className="font-amatic text-[35px] font-bold p-2">
             WALK-IN STUDIO
           </p>
@@ -25,8 +34,14 @@ const Services = () => {
             <b>Convenient Scheduling:</b> No appointment necessary! Simply walk
             in and we&apos;ll take care of the rest.
           </p>
-        </div>
-        <div className="max-w-[300px] text-center mx-auto lg:mx-0">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="max-w-[300px] text-center mx-auto lg:mx-0"
+        >
           <p className="font-amatic text-[35px] font-bold p-2">HOME SERVICE</p>
           <p className="p-2 text-[14px] italic">
             <b>Nail Care in the Comfort of Your Home:</b> Our mobile nail
@@ -37,8 +52,14 @@ const Services = () => {
             <b>Flexible Scheduling:</b> Schedule an appointment at a time that
             suits you, perfect for those with busy lives or mobility issues.
           </p>
-        </div>
-        <div className="max-w-[300px] text-center mx-auto lg:mx-0">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="max-w-[300px] text-center mx-auto lg:mx-0"
+        >
           <p className="font-amatic text-[35px] font-bold p-2">TRAINING</p>
           <p className="p-2 text-[14px] italic">
             <b>Become a Nail Artist:</b> Unlock your creativity and learn the
@@ -56,7 +77,7 @@ const Services = () => {
             completion and ongoing support to help you succeed in your nail
             career.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

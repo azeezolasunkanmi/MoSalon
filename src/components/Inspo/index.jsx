@@ -12,7 +12,7 @@ const Inspo = () => {
         Explore our collection. Swipe left for more nail inspo 🩷
       </p>
       <Gallery />
-      <p>put navigation buttons here</p>
+
       <div className="px-12 flex flex-col md:flex-row justify-center gap-4 mb-20">
         <Link
           to="/booknow"

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import PropTypes from "prop-types";
 
@@ -10,8 +11,18 @@ const Hero = ({ title1, title2, description, image }) => {
         className={`h-full w-full absolute inset-0 object-cover -z-10"
         alt="background image`}
       />
-      <div className="h-full relative flex items-center justify-start z-50 px-4 lg:px-10 xl:px-28 slide-in-bottom">
-        <section>
+      <div className="h-full relative flex items-center justify-start z-50 px-4 lg:px-10 xl:px-28">
+        <motion.section
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            type: "spring",
+            stiffness: 60,
+            ease: "easeIn",
+            duration: 1,
+          }}
+        >
           <div className="text-[50px] leading-[60px] lg:text-[72px] lg:leading-[80px] text-secondary">
             <h2>{title1}</h2>
             <h2>{title2}</h2>
@@ -25,7 +36,7 @@ const Hero = ({ title1, title2, description, image }) => {
               BOOK NOW
             </Link>
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );
