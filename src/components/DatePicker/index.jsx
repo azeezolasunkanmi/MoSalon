@@ -25,9 +25,9 @@ const DatePicker = () => {
         setOrder({
           ...order,
           dateStamp: "",
-          date: "",
+          weekday: "",
           time: "",
-          day: pickedDate,
+          day: "",
         });
 
         return;
@@ -37,9 +37,9 @@ const DatePicker = () => {
         setOrder({
           ...order,
           dateStamp: "",
-          date: "",
+          weekday: "",
           time: "",
-          day: pickedDate,
+          day: "",
         });
       }
     }
@@ -48,7 +48,7 @@ const DatePicker = () => {
     setOrder({
       ...order,
       dateStamp: new Date(selected),
-      date: weekdays[pickedDay],
+      weekday: weekdays[pickedDay],
       time: e.target.value,
       day: pickedDate,
     });
@@ -96,6 +96,13 @@ const DatePicker = () => {
               />
             ))}
           </div>
+        </div>
+      )}
+      {(!order.dateStamp || !order.time) && (
+        <div className="mt-4">
+          <h2 className="text-center my-4 text-tertiary">
+            Select date and time
+          </h2>
         </div>
       )}
     </div>

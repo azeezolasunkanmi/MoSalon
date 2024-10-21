@@ -18,7 +18,9 @@ export const BookingContextProvider = ({ children }) => {
     service: "",
     note: "",
     dateStamp: "",
-    date: "",
+    add: "",
+    price: "",
+    weekday: "",
     time: "",
     status: "pending",
   };

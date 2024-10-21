@@ -1,4 +1,3 @@
-import DatePicker from "../../components/DatePicker";
 import Footer from "../../components/Footer";
 import PageHeader from "../../components/PageHeader";
 import BookingForm from "../../components/BookingForm";
@@ -7,14 +6,6 @@ import { useState } from "react";
 
 const BookNow = () => {
   const [openModal, setOpenModal] = useState(false);
-
-  // Handle form submission
-  // const onSubmit = data => {
-  //   setOrder({ ...order, ...data });
-  //   setOpenModal(true);
-  //   console.log("Form submitted:", data);
-  // };
-
   return (
     <>
       <PageHeader
@@ -27,14 +18,7 @@ const BookNow = () => {
           Notice: Extra Designs/Services would attract an additional fee. click
           here to view price list
         </p>
-        <div className="lg:flex justify-center gap-10 mt-10 md:mt-20">
-          <div className="flex justify-center mb-10 overflow-hidden bg-white p-4 box-shadow pb-10">
-            <BookingForm />
-          </div>
-          <div className="flex justify-center">
-            <DatePicker />
-          </div>
-        </div>
+        <BookingForm setOpenModal={setOpenModal} />
       </div>
       <Footer />
 
