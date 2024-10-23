@@ -14,8 +14,9 @@ import { HiOutlineClipboardDocument } from "react-icons/hi2";
 
 const ConfirmOrderModal = ({ openModal, onClose }) => {
   const [meansOfCommunication, setMeansOfCommunication] = useState();
-  const { order, setOrder } = BookingsContext();
+  const { order, setOrder, addOrders } = BookingsContext();
   const [copied, setCopied] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   let pickedDate = order.dateStamp ? <>{format(order.dateStamp, "PP")}</> : "";
   const copyToClipboard = () => {
@@ -25,10 +26,23 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
     setTimeout(() => setCopied(false), 1500); // Reset copied state after 1.5 seconds
   };
 
-  const submitHandler = () => {
-    if (!order.add) {
-      console.log("input address");
-    } else console.log(order);
+  const submitHandler = async () => {
+    setIsLoading(true);
+    try {
+      if (order.add) {
+        await addOrders(order);
+        alert("Your order is currently awaiting confirmation");
+        setIsLoading(false);
+      } else {
+        setIsLoading(false);
+      }
+    } catch (error) {
+      setIsLoading(false);
+      console.error("An error occurred while submitting the order:", error);
+      alert(
+        "There was an issue submitting your order. Please try again later."
+      );
+    }
   };
 
   return (
@@ -159,14 +173,17 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
             />
           </div>
         )}
-        {order.add === "" && <p>Pick one of the options above</p>}
+        {order.add === "" && (
+          <p className="text-red-400">Pick provide the contact information</p>
+        )}
 
         <div>
           <button
             className="bg-darkPrimary hover:bg-primary px-6 py-2 rounded font-medium"
             onClick={submitHandler}
+            disabled={isLoading}
           >
-            Click here after transfer
+            {isLoading ? "Submitting" : "Click here after transfer"}
           </button>
         </div>
       </div>

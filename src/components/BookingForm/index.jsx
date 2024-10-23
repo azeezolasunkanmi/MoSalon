@@ -35,10 +35,10 @@ const BookingForm = ({ setOpenModal }) => {
   const onSubmit = data => {
     setOrder({ ...order, ...data });
     if (order.dateStamp === "" || order.time === "") {
-      console.log("select date and time");
+      // console.log("select date and time");
     } else {
       setOpenModal(true);
-      console.log("Form submitted:", order);
+      // console.log("Form submitted:", order);
     }
   };
 

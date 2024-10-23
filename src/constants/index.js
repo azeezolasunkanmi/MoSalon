@@ -377,33 +377,33 @@ font-size:20px;
 }
 `;
 
-export const allBookings = [
-  { day: "09-07-2924", time: ["9am", "12pm", "2pm"] },
-  { day: "08-07-2924", time: ["9am", "12pm", "2pm", "5pm"] },
-  { day: "07-07-2924", time: ["12pm", "2pm"] },
-];
+// export const allBookings = [
+//   { day: "09-07-2924", time: ["9am", "12pm", "2pm"] },
+//   { day: "08-07-2924", time: ["9am", "12pm", "2pm", "5pm"] },
+//   { day: "07-07-2924", time: ["12pm", "2pm"] },
+// ];
 
-export const orders = [
-  {
-    name: "",
-    category: "",
-    inspo: true,
-    inspoImage: "",
-    service: "",
-    note: "",
-    date: "",
-    time: "",
-    status: "",
-  },
-  {
-    name: "",
-    category: "",
-    inspo: false,
-    inspoImage: "",
-    service: "",
-    note: "",
-    date: "",
-    time: "",
-    status: "",
-  },
-];
+// export const orders = [
+//   {
+//     name: "",
+//     category: "",
+//     inspo: true,
+//     inspoImage: "",
+//     service: "",
+//     note: "",
+//     date: "",
+//     time: "",
+//     status: "",
+//   },
+//   {
+//     name: "",
+//     category: "",
+//     inspo: false,
+//     inspoImage: "",
+//     service: "",
+//     note: "",
+//     date: "",
+//     time: "",
+//     status: "",
+//   },
+// ];

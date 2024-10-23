@@ -1,10 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { allBookings } from "../constants";
 import { storage } from "../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { db } from "../firebase";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, getDocs } from "firebase/firestore";
 
 const BookNowContext = createContext();
 
@@ -25,7 +24,7 @@ export const BookingContextProvider = ({ children }) => {
     status: "pending",
   };
   const [selectedFile, setSelectedFile] = useState(null);
-  const [bookings, setBookings] = useState([]);
+  const [allOrders, setAllOrders] = useState([]);
   const [order, setOrder] = useState(initialOrderState);
   const ordersCollectionRef = collection(db, "orders");
 
@@ -56,20 +55,70 @@ export const BookingContextProvider = ({ children }) => {
     await addDoc(ordersCollectionRef, data);
   };
 
+  const getOrders = async () => {
+    try {
+      const data = await getDocs(ordersCollectionRef);
+      const filteredData = data.docs.map(doc => ({
+        ...doc.data(),
+        docId: doc.id,
+      }));
+      setAllOrders(filteredData);
+      // console.log(filteredData);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  // Function to group orders by dateStamp
+  const groupOrdersByDateStamp = () => {
+    return allOrders.reduce((acc, order) => {
+      const key = order.dateStamp;
+
+      // If the group for this dateStamp doesn't exist, create it
+      if (!acc[key]) {
+        acc[key] = [];
+      }
+
+      // Add the order to the correct group
+      acc[key].push(order);
+
+      return acc;
+    }, {});
+  };
+
+  // 2. Function to return dateStamps that occur six or more times
+  const getDisabledDays = () => {
+    const dateStampCount = allOrders.reduce((acc, order) => {
+      const key = order.dateStamp;
+
+      // Count the occurrences of each dateStamp
+      if (!acc[key]) {
+        acc[key] = 0;
+      }
+      acc[key]++;
+
+      return acc;
+    }, {});
+
+    // Get the dateStamps that occur 6 or more times
+    return Object.keys(dateStampCount).filter(key => dateStampCount[key] >= 6);
+  };
+
   useEffect(() => {
-    setBookings(allBookings);
+    getOrders();
   }, []);
 
   return (
     <BookNowContext.Provider
       value={{
-        bookings,
-        setBookings,
+        allOrders,
         order,
         setOrder,
         setSelectedFile,
         storeImage,
         addOrders,
+        getDisabledDays,
+        groupOrdersByDateStamp,
       }}
     >
       {children}

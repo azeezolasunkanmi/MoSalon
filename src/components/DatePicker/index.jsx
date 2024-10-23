@@ -7,16 +7,42 @@ import { BookingsContext } from "../../store/BookingContext";
 
 const DatePicker = () => {
   const [selected, setSelected] = useState();
-  const { order, setOrder } = BookingsContext();
+  const { order, setOrder, getDisabledDays, groupOrdersByDateStamp } =
+    BookingsContext();
   const css = dayPickerCss;
 
+  const getDisableDays = getDisabledDays().map(
+    dateString => new Date(dateString)
+  );
   const disabledDays = [
-    new Date(2024, 10, 15),
-    new Date(2024, 9, 12),
-    new Date(2024, 9, 20),
-    { dayOfWeek: [1] },
-    { before: new Date() },
+    ...getDisableDays,
+    { dayOfWeek: [1] }, // Disable all Mondays
+    { before: new Date() }, // Disable all dates before today
   ];
+
+  const getAvailableTimeSlots = () => {
+    // check for free time when a user selects a date
+    const bookings = groupOrdersByDateStamp();
+    const selectedDate = new Date(selected).toLocaleDateString();
+
+    // Check if the selected date exists in bookings
+    if (bookings[selectedDate]) {
+      const bookedTimes = bookings[selectedDate].map(booking => booking.time);
+
+      // Filter out the booked times from the available time slots
+      const freeSlots = bookingTimes.filter(
+        slot => !bookedTimes.includes(slot.time)
+      );
+
+      return freeSlots;
+    } else {
+      // If the date isn't booked yet, all time slots are available
+      return bookingTimes;
+    }
+  };
+
+  const freeSlots = getAvailableTimeSlots();
+
   const timeSelectedHandler = e => {
     const previouslySelected = document.querySelector(".timeSelected");
     if (previouslySelected) {
@@ -47,7 +73,7 @@ const DatePicker = () => {
     e.target.classList.add("timeSelected"); // add dark background to show its selected
     setOrder({
       ...order,
-      dateStamp: new Date(selected),
+      dateStamp: new Date(selected).toLocaleDateString(),
       weekday: weekdays[pickedDay],
       time: e.target.value,
       day: pickedDate,
@@ -86,7 +112,7 @@ const DatePicker = () => {
             {weekdays[pickedDay]} {pickedDate}
           </h2>
           <div className="flex items-center justify-center gap-2 flex-wrap">
-            {bookingTimes.map(time => (
+            {freeSlots.map(time => (
               <input
                 key={time.id}
                 type="button"
@@ -100,7 +126,7 @@ const DatePicker = () => {
       )}
       {(!order.dateStamp || !order.time) && (
         <div className="mt-4">
-          <h2 className="text-center my-4 text-tertiary">
+          <h2 className="text-center my-4 text-red-400">
             Select date and time
           </h2>
         </div>
