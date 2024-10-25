@@ -78,6 +78,7 @@ const DatePicker = () => {
       time: e.target.value,
       day: pickedDate,
     });
+    console.log(e.target.value);
   };
 
   let pickedDay = new Date(selected).getDay();
@@ -112,11 +113,11 @@ const DatePicker = () => {
             {weekdays[pickedDay]} {pickedDate}
           </h2>
           <div className="flex items-center justify-center gap-2 flex-wrap">
-            {freeSlots.map(time => (
+            {freeSlots.map(slot => (
               <input
-                key={time.id}
+                key={slot.id}
                 type="button"
-                value={time.time}
+                value={slot.time}
                 onClick={timeSelectedHandler}
                 className="w-[28%] py-2 bg-primary rounded-lg cursor-pointer hover:bg-darkPrimary"
               />
