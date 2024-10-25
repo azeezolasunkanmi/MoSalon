@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import ModalContainer from "../ModalContainer";
+import { useNavigate } from "react-router-dom";
 import {
   FaWhatsapp,
   FaTiktok,
@@ -17,6 +18,23 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
   const { order, setOrder, addOrders } = BookingsContext();
   const [copied, setCopied] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const initialOrderState = {
+    name: "",
+    category: "",
+    isInspo: false,
+    inspoImage: "",
+    imgUrl: "",
+    service: "",
+    note: "",
+    dateStamp: "",
+    add: "",
+    price: "",
+    weekday: "",
+    time: "",
+    status: "pending",
+  };
 
   let pickedDate = order.dateStamp ? <>{format(order.dateStamp, "PP")}</> : "";
   const copyToClipboard = () => {
@@ -33,6 +51,8 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
         await addOrders(order);
         alert("Your order is currently awaiting confirmation");
         setIsLoading(false);
+        setOrder(initialOrderState);
+        navigate("/");
       } else {
         setIsLoading(false);
       }

@@ -3,7 +3,13 @@ import PropTypes from "prop-types";
 import { storage } from "../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { db } from "../firebase";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getDocs,
+  doc,
+  updateDoc,
+} from "firebase/firestore";
 
 const BookNowContext = createContext();
 
@@ -69,36 +75,52 @@ export const BookingContextProvider = ({ children }) => {
     }
   };
 
+  // Update user information
+  const updateUser = async (id, data) => {
+    try {
+      const userDoc = doc(db, "orders", id);
+      await updateDoc(userDoc, data);
+      getOrders();
+    } catch (error) {
+      console.error("Error updating user: ", error);
+      throw error;
+    }
+  };
+
   // Function to group orders by dateStamp
   const groupOrdersByDateStamp = () => {
-    return allOrders.reduce((acc, order) => {
-      const key = order.dateStamp;
+    return allOrders
+      .filter(order => order.status === "paid")
+      .reduce((acc, order) => {
+        const key = order.dateStamp;
 
-      // If the group for this dateStamp doesn't exist, create it
-      if (!acc[key]) {
-        acc[key] = [];
-      }
+        // If the group for this dateStamp doesn't exist, create it
+        if (!acc[key]) {
+          acc[key] = [];
+        }
 
-      // Add the order to the correct group
-      acc[key].push(order);
+        // Add the order to the correct group
+        acc[key].push(order);
 
-      return acc;
-    }, {});
+        return acc;
+      }, {});
   };
 
   // 2. Function to return dateStamps that occur six or more times
   const getDisabledDays = () => {
-    const dateStampCount = allOrders.reduce((acc, order) => {
-      const key = order.dateStamp;
+    const dateStampCount = allOrders
+      .filter(order => order.status === "paid")
+      .reduce((acc, order) => {
+        const key = order.dateStamp;
 
-      // Count the occurrences of each dateStamp
-      if (!acc[key]) {
-        acc[key] = 0;
-      }
-      acc[key]++;
+        // Count the occurrences of each dateStamp
+        if (!acc[key]) {
+          acc[key] = 0;
+        }
+        acc[key]++;
 
-      return acc;
-    }, {});
+        return acc;
+      }, {});
 
     // Get the dateStamps that occur 6 or more times
     return Object.keys(dateStampCount).filter(key => dateStampCount[key] >= 6);
@@ -119,6 +141,7 @@ export const BookingContextProvider = ({ children }) => {
         addOrders,
         getDisabledDays,
         groupOrdersByDateStamp,
+        updateUser,
       }}
     >
       {children}

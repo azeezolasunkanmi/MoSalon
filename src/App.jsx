@@ -6,6 +6,7 @@ import PriceList from "./pages/PriceList";
 import Training from "./pages/Training";
 import Inspo from "./pages/Inspo";
 import BookNow from "./pages/BookNow";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="training" element={<Training />} />
           <Route path="inspo" element={<Inspo />} />
           <Route path="booknow" element={<BookNow />} />
+          <Route path="admin" element={<Admin />} />
         </Route>
       </Routes>
     </BrowserRouter>
