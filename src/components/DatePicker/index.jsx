@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { DayPicker } from "react-day-picker";
 // import { format } from "date-fns";
 import "react-day-picker/style.css";
@@ -7,6 +7,7 @@ import { BookingsContext } from "../../store/BookingContext";
 
 const DatePicker = () => {
   const [selected, setSelected] = useState();
+  const [availableTime, setAvailableTime] = useState(bookingTimes);
   const { order, setOrder, getDisabledDays, groupOrdersByDateStamp } =
     BookingsContext();
   const css = dayPickerCss;
@@ -34,14 +35,15 @@ const DatePicker = () => {
         slot => !bookedTimes.includes(slot.time)
       );
 
-      return freeSlots;
+      setAvailableTime(freeSlots);
     } else {
       // If the date isn't booked yet, all time slots are available
-      return bookingTimes;
+      setAvailableTime(bookingTimes);
     }
   };
-
-  const freeSlots = getAvailableTimeSlots();
+  useEffect(() => {
+    getAvailableTimeSlots();
+  }, [selected]);
 
   const timeSelectedHandler = e => {
     const previouslySelected = document.querySelector(".timeSelected");
@@ -78,7 +80,6 @@ const DatePicker = () => {
       time: e.target.value,
       day: pickedDate,
     });
-    console.log(e.target.value);
   };
 
   let pickedDay = new Date(selected).getDay();
@@ -113,7 +114,7 @@ const DatePicker = () => {
             {weekdays[pickedDay]} {pickedDate}
           </h2>
           <div className="flex items-center justify-center gap-2 flex-wrap">
-            {freeSlots.map(slot => (
+            {availableTime.map(slot => (
               <input
                 key={slot.id}
                 type="button"
