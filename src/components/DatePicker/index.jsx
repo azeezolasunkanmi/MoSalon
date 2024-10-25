@@ -54,7 +54,7 @@ const DatePicker = () => {
           ...order,
           dateStamp: "",
           weekday: "",
-          time: "",
+          slot: "",
           day: "",
         });
 
@@ -66,7 +66,7 @@ const DatePicker = () => {
           ...order,
           dateStamp: "",
           weekday: "",
-          time: "",
+          slot: "",
           day: "",
         });
       }
@@ -77,7 +77,7 @@ const DatePicker = () => {
       ...order,
       dateStamp: new Date(selected).toLocaleDateString(),
       weekday: weekdays[pickedDay],
-      time: e.target.value,
+      slot: e.target.value,
       day: pickedDate,
     });
   };
