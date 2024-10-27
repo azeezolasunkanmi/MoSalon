@@ -56,7 +56,9 @@ const MainNavigation = () => {
                 }`}
                 onClick={() => setToggle(!toggle)}
               >
-                <NavLink to={link.to}>{link.title}</NavLink>
+                <NavLink className="w-full block" to={link.to}>
+                  {link.title}
+                </NavLink>
               </span>
             ))}
           </div>

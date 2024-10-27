@@ -194,7 +194,9 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
           </div>
         )}
         {order.add === "" && (
-          <p className="text-red-400">Pick provide the contact information</p>
+          <p className="text-red-400">
+            Please provide the contact information from the options above
+          </p>
         )}
 
         <div>

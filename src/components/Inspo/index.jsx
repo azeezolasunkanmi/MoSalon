@@ -21,7 +21,7 @@ const Inspo = () => {
           BOOK AN APPOINTMENT
         </Link>
         <Link
-          to="/booknow"
+          to="/inspo"
           className="text-center py-2 px-4 text-[35px] font-bold font-amatic bg-primary text-tertiary hover:bg-darkPrimary rounded"
         >
           VIEW GALLERY

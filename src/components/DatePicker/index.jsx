@@ -7,7 +7,7 @@ import { BookingsContext } from "../../store/BookingContext";
 
 const DatePicker = () => {
   const [selected, setSelected] = useState();
-  const [availableTime, setAvailableTime] = useState(bookingTimes);
+  const [availableTime, setAvailableTime] = useState(null);
   const { order, setOrder, getDisabledDays, groupOrdersByDateStamp } =
     BookingsContext();
   const css = dayPickerCss;
@@ -22,23 +22,27 @@ const DatePicker = () => {
   ];
 
   const getAvailableTimeSlots = () => {
-    // check for free time when a user selects a date
-    const bookings = groupOrdersByDateStamp();
-    const selectedDate = new Date(selected).toLocaleDateString();
+    if (selected) {
+      // check for free time when a user selects a date
+      const bookings = groupOrdersByDateStamp();
+      const selectedDate = `${selected.getFullYear()}-${String(
+        selected.getMonth() + 1
+      ).padStart(2, "0")}-${String(selected.getDate()).padStart(2, "0")}`;
 
-    // Check if the selected date exists in bookings
-    if (bookings[selectedDate]) {
-      const bookedTimes = bookings[selectedDate].map(booking => booking.time);
+      // Check if the selected date exists in bookings
+      if (bookings[selectedDate]) {
+        const bookedTimes = bookings[selectedDate].map(booking => booking.time);
 
-      // Filter out the booked times from the available time slots
-      const freeSlots = bookingTimes.filter(
-        slot => !bookedTimes.includes(slot.time)
-      );
+        // Filter out the booked times from the available time slots
+        const freeSlots = bookingTimes.filter(
+          slot => !bookedTimes.includes(slot.time)
+        );
 
-      setAvailableTime(freeSlots);
-    } else {
-      // If the date isn't booked yet, all time slots are available
-      setAvailableTime(bookingTimes);
+        setAvailableTime(freeSlots);
+      } else {
+        // If the date isn't booked yet, all time slots are available
+        setAvailableTime(bookingTimes);
+      }
     }
   };
   useEffect(() => {
@@ -46,6 +50,10 @@ const DatePicker = () => {
   }, [selected]);
 
   const timeSelectedHandler = e => {
+    const selectedDateString = `${selected.getFullYear()}-${String(
+      selected.getMonth() + 1
+    ).padStart(2, "0")}-${String(selected.getDate()).padStart(2, "0")}`;
+
     const previouslySelected = document.querySelector(".timeSelected");
     if (previouslySelected) {
       if (previouslySelected === e.target) {
@@ -54,7 +62,7 @@ const DatePicker = () => {
           ...order,
           dateStamp: "",
           weekday: "",
-          slot: "",
+          time: "",
           day: "",
         });
 
@@ -66,7 +74,7 @@ const DatePicker = () => {
           ...order,
           dateStamp: "",
           weekday: "",
-          slot: "",
+          time: "",
           day: "",
         });
       }
@@ -75,17 +83,15 @@ const DatePicker = () => {
     e.target.classList.add("timeSelected"); // add dark background to show its selected
     setOrder({
       ...order,
-      dateStamp: new Date(selected).toLocaleDateString(),
+      dateStamp: selectedDateString,
       weekday: weekdays[pickedDay],
-      slot: e.target.value,
+      time: e.target.value,
       day: pickedDate,
     });
   };
 
   let pickedDay = new Date(selected).getDay();
   let pickedDate = new Date(selected).getDate();
-
-  // let pickedDate = selected ? <p>{format(selected, "PP")}</p> : "";
 
   return (
     <div>
@@ -101,20 +107,15 @@ const DatePicker = () => {
             today: "my-today",
             disabled: "my-disabled",
           }}
-          // footer={
-          //   selected
-          //     ? `Selected: ${selected.toLocaleDateString()}`
-          //     : "Pick a day."
-          // }
         />
       </div>
-      {selected && (
+      {selected && availableTime && (
         <div className="w-full slide-in-bottom">
           <h2 className="text-center my-4 text-[18px]">
             {weekdays[pickedDay]} {pickedDate}
           </h2>
           <div className="flex items-center justify-center gap-2 flex-wrap">
-            {availableTime.map(slot => (
+            {availableTime?.map(slot => (
               <input
                 key={slot.id}
                 type="button"
