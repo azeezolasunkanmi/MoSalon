@@ -12,7 +12,6 @@ import { useState } from "react";
 import { BookingsContext } from "../../store/BookingContext";
 import { format } from "date-fns";
 import { HiOutlineClipboardDocument } from "react-icons/hi2";
-import { TELEGRAM_BOT_ID, CHAT_ID } from "../../utlis";
 
 const ConfirmOrderModal = ({ openModal, onClose }) => {
   const [meansOfCommunication, setMeansOfCommunication] = useState();
@@ -58,8 +57,8 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
     note: ${order.note}
     
   `;
-    const telegram_bot_id = TELEGRAM_BOT_ID;
-    const chat_id = CHAT_ID;
+    const telegram_bot_id = import.meta.env.VITE_TELEGRAM_BOT_ID;
+    const chat_id = import.meta.env.VITE_CHAT_ID;
 
     try {
       const response = await fetch(
