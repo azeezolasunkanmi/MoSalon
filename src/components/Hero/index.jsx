@@ -13,7 +13,7 @@ const Hero = ({ title1, title2, description, image }) => {
       />
       <div className="h-full relative flex items-center justify-start z-50 px-4 lg:px-10 xl:px-28">
         <motion.section
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
             delay: 0.2,

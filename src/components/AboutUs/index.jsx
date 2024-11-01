@@ -1,6 +1,5 @@
 import pic from "../../assets/aboutUs/working.png";
 import ServiceCard from "../Services/ServiceCard";
-import { Link } from "react-router-dom";
 import { servicesContent } from "../../constants";
 import { FaWhatsapp, FaTiktok, FaInstagram, FaFacebookF } from "react-icons/fa";
 
@@ -42,30 +41,46 @@ const AboutUS = () => {
               Connect with us
             </p>
             <div className="flex gap-6">
-              <Link>
+              <a
+                href="https://wa.me/2348029269259"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaWhatsapp
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://www.instagram.com/polishme_by_mo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://www.facebook.com/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://www.tiktok.com/@polish_me_by_mo?_t=8r1CcwGlTJl&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTiktok
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

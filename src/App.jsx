@@ -7,10 +7,12 @@ import Training from "./pages/Training";
 import Inspo from "./pages/Inspo";
 import BookNow from "./pages/BookNow";
 import Admin from "./pages/Admin";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />

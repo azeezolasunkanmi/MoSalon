@@ -12,6 +12,7 @@ import { useState } from "react";
 import { BookingsContext } from "../../store/BookingContext";
 import { format } from "date-fns";
 import { HiOutlineClipboardDocument } from "react-icons/hi2";
+import { TELEGRAM_BOT_ID, CHAT_ID } from "../../utlis";
 
 const ConfirmOrderModal = ({ openModal, onClose }) => {
   const [meansOfCommunication, setMeansOfCommunication] = useState();
@@ -44,11 +45,55 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
     setTimeout(() => setCopied(false), 1500); // Reset copied state after 1.5 seconds
   };
 
+  const sender = async () => {
+    const message = `
+    BOOKING
+    name: ${order.name},
+    category: ${order.category},
+    service: ${order.service},
+    date: ${order.dateStamp},
+    contact: ${order.add},
+    price: ${order.price},
+    time: ${order.time},
+    note: ${order.note}
+    
+  `;
+    const telegram_bot_id = TELEGRAM_BOT_ID;
+    const chat_id = CHAT_ID;
+
+    try {
+      const response = await fetch(
+        `https://api.telegram.org/bot${telegram_bot_id}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache",
+          },
+          body: JSON.stringify({
+            chat_id: chat_id,
+            text: message,
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      const responseData = await response.json();
+      console.log(responseData);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const submitHandler = async () => {
     setIsLoading(true);
     try {
       if (order.add) {
         await addOrders(order);
+        await sender();
         alert("Your order is currently awaiting confirmation");
         setIsLoading(false);
         setOrder(initialOrderState);

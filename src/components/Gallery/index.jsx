@@ -10,7 +10,7 @@ const Gallery = () => {
   const scrollLeft = () => {
     if (galleryRef.current) {
       galleryRef.current.scrollBy({
-        left: -500, // Adjust scroll distance
+        left: -300, // Adjust scroll distance
         behavior: "smooth",
       });
     }
@@ -20,7 +20,7 @@ const Gallery = () => {
   const scrollRight = () => {
     if (galleryRef.current) {
       galleryRef.current.scrollBy({
-        left: 500, // Adjust scroll distance
+        left: 300, // Adjust scroll distance
         behavior: "smooth",
       });
     }
@@ -36,7 +36,7 @@ const Gallery = () => {
           <GalleryImage key={i} src={nail.src} />
         ))}
       </div>
-      <div className="flex justify-center items-center gap-10 mt-10">
+      <div className="flex justify-center items-center gap-10">
         <button
           className="bg-darkPrimary hover:bg-primary text-white text-[18px] px-3 py-2 rounded-full z-10"
           onClick={scrollLeft}

@@ -21,12 +21,12 @@ const StudioContent = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-col gap-2 items-center">
+          <div className="flex-col gap-2 items-center shrink-0">
             <h2 className="font-amatic font-bold text-tertiary text-[40px]">
               Acrylic set
             </h2>
             <p className="text-[14px] text-darkPrimary underline">
-              View in Inspo
+              <Link to="/inspo">View in Inspo</Link>
             </p>
           </div>
         </div>
@@ -38,12 +38,12 @@ const StudioContent = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-col gap-2 items-center">
+          <div className="flex-col gap-2 items-center shrink-0">
             <h2 className="font-amatic font-bold text-tertiary text-[40px]">
               Gel polish
             </h2>
             <p className="text-[14px] text-darkPrimary underline">
-              View in Inspo
+              <Link to="/inspo">View in Inspo</Link>
             </p>
           </div>
         </div>
@@ -55,12 +55,12 @@ const StudioContent = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-col gap-2 items-center">
+          <div className="flex-col gap-2 items-center shrink-0">
             <h2 className="font-amatic font-bold text-tertiary text-[40px]">
               Stick on
             </h2>
             <p className="text-[14px] text-darkPrimary underline">
-              View in Inspo
+              <Link to="/inspo">View in Inspo</Link>
             </p>
           </div>
         </div>
@@ -72,12 +72,12 @@ const StudioContent = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex-col gap-2 items-center">
+          <div className="flex-col gap-2 items-center shrink-0">
             <h2 className="font-amatic font-bold text-tertiary text-[40px]">
               biab nails
             </h2>
             <p className="text-[14px] text-darkPrimary underline">
-              View in Inspo
+              <Link to="/inspo">View in Inspo</Link>
             </p>
           </div>
         </div>
@@ -89,12 +89,12 @@ const StudioContent = () => {
               alt="arcylic"
             />
           </div>
-          <div className="flex-col gap-2 items-center">
+          <div className="flex-col gap-2 items-center shrink-0">
             <h2 className="font-amatic font-bold text-tertiary text-[40px]">
               Acrylic overlay
             </h2>
             <p className="text-[14px] text-darkPrimary underline">
-              View in Inspo
+              <Link to="/inspo">View in Inspo</Link>
             </p>
           </div>
         </div>
@@ -106,12 +106,12 @@ const StudioContent = () => {
               alt="arcylic"
             />
           </div>
-          <div className="flex-col gap-2 items-center">
+          <div className="flex-col gap-2 items-center shrink-0">
             <h2 className="font-amatic font-bold text-tertiary text-[40px]">
               soak off
             </h2>
             <p className="text-[14px] text-darkPrimary underline">
-              View in Inspo
+              {/* View in Inspo */}
             </p>
           </div>
         </div>

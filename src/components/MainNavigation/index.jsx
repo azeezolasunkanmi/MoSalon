@@ -45,7 +45,7 @@ const MainNavigation = () => {
       </div>
       {toggle && (
         <div>
-          <div className="flex flex-col m-4 gap-6 text-[16px] font-semibold text-tertiary lg:hidden">
+          <div className="flex flex-col m-4 gap-6 text-[16px] font-semibold text-tertiary h-screen lg:hidden">
             {navLinks.map(link => (
               <span
                 key={link.id}

@@ -8,7 +8,7 @@ const Inspo = () => {
           Get Inspired
         </h2>
       </div>
-      <p className="text-center text-[18px] font-medium text-tertiary font-poppins mt-2">
+      <p className="text-center text-[18px] font-medium text-tertiary font-poppins mt-2 p-4">
         Explore our collection. Swipe left for more nail inspo 🩷
       </p>
       <Gallery />

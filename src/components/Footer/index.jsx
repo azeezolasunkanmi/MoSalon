@@ -13,30 +13,46 @@ const Footer = () => {
               Connect with us
             </h2>
             <div className="flex gap-6 mt-2 mb-8">
-              <Link>
+              <a
+                href="https://wa.me/2348029269259"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaWhatsapp
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://www.instagram.com/polishme_by_mo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://www.facebook.com/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://www.tiktok.com/@polish_me_by_mo?_t=8r1CcwGlTJl&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTiktok
                   size={24}
                   className="hover:text-darkPrimary hover:scale-150"
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -48,7 +64,11 @@ const Footer = () => {
               Call Us: +2348029269259
             </a>
           </p>
-          <p>Email:</p>
+          <p>
+            <a href="mailto:olawusirayo@gmail.com" className="">
+              Email: olawusirayo@gmail.com
+            </a>
+          </p>
         </div>
         <div className="md:w-[300px] flex flex-col gap-4 mt-6">
           <h2 className="text-darkPrimary uppercase font-medium">
