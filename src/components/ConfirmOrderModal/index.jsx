@@ -1,20 +1,20 @@
 import PropTypes from "prop-types";
 import ModalContainer from "../ModalContainer";
 import { useNavigate } from "react-router-dom";
-import {
-  FaWhatsapp,
-  FaTiktok,
-  FaInstagram,
-  FaFacebookF,
-  FaPhoneAlt,
-} from "react-icons/fa";
+// import {
+//   FaWhatsapp,
+//   FaTiktok,
+//   FaInstagram,
+//   FaFacebookF,
+//   FaPhoneAlt,
+// } from "react-icons/fa";
 import { useState } from "react";
 import { BookingsContext } from "../../store/BookingContext";
 import { format } from "date-fns";
 import { HiOutlineClipboardDocument } from "react-icons/hi2";
 
 const ConfirmOrderModal = ({ openModal, onClose }) => {
-  const [meansOfCommunication, setMeansOfCommunication] = useState();
+  // const [meansOfCommunication, setMeansOfCommunication] = useState();
   const { order, setOrder, addOrders } = BookingsContext();
   const [copied, setCopied] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -51,7 +51,7 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
     category: ${order.category},
     service: ${order.service},
     date: ${order.dateStamp},
-    contact: ${order.add},
+    contact: ${order.phone},
     price: ${order.price},
     time: ${order.time},
     note: ${order.note}
@@ -87,12 +87,56 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
     }
   };
 
+  const sender2 = async () => {
+    const message = `
+    BOOKING
+    name: ${order.name},
+    category: ${order.category},
+    service: ${order.service},
+    date: ${order.dateStamp},
+    contact: ${order.phone},
+    price: ${order.price},
+    time: ${order.time},
+    note: ${order.note}
+    
+  `;
+    const telegram_bot_id = import.meta.env.VITE_TELEGRAM_BOT_ID2;
+    const chat_id = import.meta.env.VITE_CHAT_ID2;
+
+    try {
+      const response = await fetch(
+        `https://api.telegram.org/bot${telegram_bot_id}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache",
+          },
+          body: JSON.stringify({
+            chat_id: chat_id,
+            text: message,
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      const responseData = await response.json();
+      console.log(responseData);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const submitHandler = async () => {
     setIsLoading(true);
     try {
-      if (order.add) {
+      if (order) {
         await addOrders(order);
         await sender();
+        await sender2();
         alert("Your order is currently awaiting confirmation");
         setIsLoading(false);
         setOrder(initialOrderState);
@@ -170,16 +214,16 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
           </div>
 
           <p className="mt-10">
-            You must make an initial deposit of{" "}
+            You must make an initial deposit of at least{" "}
             <span className="text-darkPrimary font-semibold">&#8358;5000 </span>{" "}
             to confirm your booking.
           </p>
-          <p className=" mt-4">
+          {/* <p className=" mt-4">
             Select your preffered mode of communication below and a confirmation
             message would be sent to you after we receive payments.
-          </p>
+          </p> */}
         </div>
-        <div className="flex gap-6">
+        {/* <div className="flex gap-6">
           <span>
             <FaWhatsapp
               size={24}
@@ -215,8 +259,8 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
               onClick={() => setMeansOfCommunication("phone number")}
             />
           </span>
-        </div>
-        {meansOfCommunication && (
+        </div> */}
+        {/* {meansOfCommunication && (
           <div className="flex flex-col gap-2">
             <label
               htmlFor="name"
@@ -236,12 +280,13 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
               }
             />
           </div>
-        )}
-        {order.add === "" && (
+        )} */}
+        {/* {order.add === "" && (
           <p className="text-red-400">
-            Please provide the contact information from the options above
+            Click on the icon above and provide the contact information from the
+            options above
           </p>
-        )}
+        )} */}
 
         <div>
           <button

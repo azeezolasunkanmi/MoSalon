@@ -3,6 +3,7 @@ import PageHeader from "../../components/PageHeader";
 import BookingForm from "../../components/BookingForm";
 import ConfirmOrderModal from "../../components/ConfirmOrderModal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const BookNow = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -15,8 +16,11 @@ const BookNow = () => {
       />
       <div className="p-4">
         <p className="p-4 text-center text-secondary bg-darkPrimary rounded-sm max-w-[700px] mx-auto my-8">
-          Notice: Extra Designs/Services would attract an additional fee. click
-          here to view price list
+          Notice: Extra Designs/Services would attract an additional fee.{" "}
+          <Link className="text-white underline" to="/price">
+            click here
+          </Link>{" "}
+          to view price list
         </p>
         <BookingForm setOpenModal={setOpenModal} />
       </div>

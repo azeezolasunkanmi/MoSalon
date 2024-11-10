@@ -64,7 +64,8 @@ export const servicesContent = [
   },
   {
     title: "Famous Brands",
-    description: "Our partners are Luxio, OPI, Essie, etc.",
+    description:
+      "Our brands include Gorgeous, OPI, Debunch, Gelish, Verschona, Vinemay, Etc.",
     image: img4,
   },
 ];

@@ -11,6 +11,11 @@ const bookingSchema = z.object({
   name: z.string().min(1, "Input a name"),
   category: z.string().min(1, "Select a category"),
   service: z.string().min(1, "Select a service"),
+  phone: z
+    .string()
+    .min(10, "Phone number must be at least 10 digits")
+    .max(15, "Phone number can't exceed 15 digits")
+    .regex(/^\+?\d+$/, "Invalid Phone format"),
   note: z.string().optional(),
 });
 
@@ -29,6 +34,7 @@ const BookingForm = ({ setOpenModal }) => {
       category: order.category,
       service: order.service,
       note: order.note,
+      phone: order.phone,
     },
   });
 
@@ -88,6 +94,24 @@ const BookingForm = ({ setOpenModal }) => {
               {errors.name && (
                 <p className="text-red-500 text-[14px]">
                   {errors.name.message}
+                </p>
+              )}
+            </div>
+            {/* Number Field */}
+            <div className="flex flex-col gap-2">
+              <label htmlFor="phone">Phone no</label>
+              <input
+                {...register("phone")}
+                name="phone"
+                type="tel"
+                value={order.phone}
+                placeholder="Enter a valid mobile number"
+                className="p-2 bg-lightPrimary outline-none"
+                onChange={handleInputChange}
+              />
+              {errors.phone && (
+                <p className="text-red-500 text-[14px]">
+                  {errors.phone.message}
                 </p>
               )}
             </div>
