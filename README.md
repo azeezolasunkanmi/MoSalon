@@ -1,8 +1,37 @@
-# React + Vite
+# Mo Salon
+This is a website for a Nail Tech.
+## Table of contents
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+## Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### The challenge
 
-Currently, two official plugins are available:
+Users should be able to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Read information about the Salon
+- Check for nail Inspo
+- Book a nail appointment
+
+
+
+### Links
+
+- [Live Site URL](https://polishmebymo.netlify.app/)
+
+## My process
+
+### Built with
+
+- React
+- Vite
+- Tailwind
+- Firebase
+- Javascript
+
+## Author
+- Twitter - [Harziz_](https://www.twitter.com/harziz_)
