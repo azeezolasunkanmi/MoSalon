@@ -19,6 +19,11 @@ Users should be able to:
 - Admin Approval System: Bookings are sent for review, where the admin can accept or decline requests.
 
 
+### Screenshot
+
+![Screenshot 2024-11-11 132216](https://github.com/user-attachments/assets/270ed729-674e-448d-8e42-219d22536a2c)
+
+![Screenshot 2024-11-11 132315](https://github.com/user-attachments/assets/c2ca9134-44d8-46b4-aa57-24deb95cb6bd)
 
 ### Links
 
