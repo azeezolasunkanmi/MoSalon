@@ -35,3 +35,4 @@ Users should be able to:
 
 ## Author
 - Twitter - [Harziz_](https://www.twitter.com/harziz_)
+- Linkedln - [Azeez Olasunkanmi](https://www.linkedin.com/in/azeez-olasunkanmi-0b4b9baa)
