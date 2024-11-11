@@ -167,7 +167,11 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
           </p>
           <div>
             <p className="text-[18px] text-tertiary">
-              You booked for {order && order.category} section
+              You booked for{" "}
+              <span className="text-darkPrimary capitalize">
+                {order && order.category}
+              </span>{" "}
+              section
             </p>
           </div>
           <div className="flex gap-8 mt-4">
@@ -213,7 +217,7 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
             </p>
           </div>
 
-          <p className="mt-10">
+          <p className="mt-10 font-semibold text-tertiary">
             You must make an initial deposit of at least{" "}
             <span className="text-darkPrimary font-semibold">&#8358;5000 </span>{" "}
             to confirm your booking.
