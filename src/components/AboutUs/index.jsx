@@ -62,7 +62,7 @@ const AboutUS = () => {
                 />
               </a>
               <a
-                href="https://www.facebook.com/yourprofile"
+                href="https://www.facebook.com/phateamah?mibextid=LQQJ4d "
                 target="_blank"
                 rel="noopener noreferrer"
               >

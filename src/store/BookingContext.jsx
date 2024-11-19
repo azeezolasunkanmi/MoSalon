@@ -83,6 +83,13 @@ export const BookingContextProvider = ({ children }) => {
     }
   };
 
+  useEffect(() => {
+    fetchAllImages("biab").then(urls => {
+      setStickOnImageUrls(urls); // Array of image URLs
+      // console.log(urls);
+    });
+  }, []);
+
   const getOrders = async () => {
     try {
       const data = await getDocs(ordersCollectionRef);
@@ -150,10 +157,6 @@ export const BookingContextProvider = ({ children }) => {
 
   useEffect(() => {
     getOrders();
-    fetchAllImages("acrylic").then(urls => {
-      setStickOnImageUrls(urls); // Array of image URLs
-      console.log(urls);
-    });
   }, []);
 
   return (

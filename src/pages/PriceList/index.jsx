@@ -17,29 +17,33 @@ const PriceList = () => {
           <div className="text-tertiary flex flex-col gap-4 mb-8 lg:text-[18px]">
             <div className="flex justify-between">
               <p>STICK ON WITH GEL</p>
-              <p>&#8358; 8000</p>
-            </div>
-            <div className="flex justify-between">
-              <p>ACRYLIC OVERLAY</p>
               <p>&#8358; 10, 000</p>
             </div>
             <div className="flex justify-between">
+              <p>ACRYLIC OVERLAY</p>
+              <p>&#8358; 13, 000</p>
+            </div>
+            <div className="flex justify-between">
               <p>PLAIN ACRYLIC SET</p>
-              <p>&#8358; 14, 000</p>
+              <p>&#8358; 15, 000</p>
             </div>
             <div className="flex justify-between">
               <p>BIAB NAILS</p>
-              <p>&#8358; 12, 000</p>
+              <p>&#8358; 13, 000</p>
             </div>
 
             <div className="flex justify-between">
               <p>OMBRE/MARBLE</p>
-              <p>&#8358; 18, 000</p>
+              <p>&#8358; 20, 000</p>
+            </div>
+            <div className="flex justify-between">
+              <p>FRENCH TIPS</p>
+              <p>&#8358; 23, 000</p>
             </div>
 
             <div className="flex justify-between">
               <p>INFILL</p>
-              <p>&#8358; 10, 000</p>
+              <p>&#8358; 15, 000</p>
             </div>
             <div className="flex justify-between">
               <p>LONG</p>
@@ -76,7 +80,7 @@ const PriceList = () => {
 
             <div className="flex justify-between">
               <p>BASIC MANICURE</p>
-              <p>&#8358; 5000</p>
+              <p>&#8358; 7000</p>
             </div>
           </div>
         </div>
@@ -88,11 +92,11 @@ const PriceList = () => {
           <div className="text-tertiary flex flex-col gap-4 mb-8 lg:text-[18px]">
             <div className="flex justify-between">
               <p>NAIL ART</p>
-              <p>&#8358; 500/FINGER</p>
+              <p>&#8358; 1000/FINGER</p>
             </div>
             <div className="flex justify-between">
               <p>STONES</p>
-              <p>&#8358; 500/FINGER</p>
+              <p>&#8358; 1000/FINGER</p>
             </div>
             <div className="flex justify-between">
               <p>CHROME</p>
@@ -109,7 +113,7 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>3D DESIGN</p>
-              <p>&#8358; 1500/FINGER</p>
+              <p>&#8358; 2000/FINGER</p>
             </div>
           </div>
         </div>

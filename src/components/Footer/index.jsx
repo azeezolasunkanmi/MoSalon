@@ -34,7 +34,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.facebook.com/yourprofile"
+                href="https://www.facebook.com/phateamah?mibextid=LQQJ4d "
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -74,8 +74,8 @@ const Footer = () => {
           <h2 className="text-darkPrimary uppercase font-medium">
             OPENING HOURS
           </h2>
-          <p>Tuesday - Saturday: 10am - 9pm</p>
-          <p>Sunday: 2pm - 9pm</p>
+          <p>Tuesday - Saturday: 9am - 9pm</p>
+          <p>Sunday: 1pm - 8pm</p>
         </div>
         <div className="md:w-[250px] flex flex-col gap-4 mt-6">
           <h2 className="text-darkPrimary uppercase font-medium">

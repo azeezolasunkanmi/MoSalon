@@ -72,113 +72,113 @@ export const servicesContent = [
 
 // GALLERY NAILS
 
-export const nails = [
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/woman-showing-her-beautiful-nails_23-2148697087.jpg?t=st=1726253678~exp=1726257278~hmac=1421ff73ff2ad15296eedc1ba4c1fcd20db080b09c6d5f20442aca62a057ba5d&w=826",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/womans-nails-with-black-pink-design_959961-9670.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/afro-american-woman-hand-with-flowers-painted-her-long-nails-summer-themed-nail-art_1168752-1816.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/boho-wedding-nails-designed-freespirited-brides_1268167-1053.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
+// export const nails = [
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/woman-showing-her-beautiful-nails_23-2148697087.jpg?t=st=1726253678~exp=1726257278~hmac=1421ff73ff2ad15296eedc1ba4c1fcd20db080b09c6d5f20442aca62a057ba5d&w=826",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/womans-nails-with-black-pink-design_959961-9670.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/afro-american-woman-hand-with-flowers-painted-her-long-nails-summer-themed-nail-art_1168752-1816.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/boho-wedding-nails-designed-freespirited-brides_1268167-1053.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
 
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-nails_959961-10719.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/pink-blue-french-manicure-with-painted-clouds_1264676-34.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/woman-with-pink-nails-that-says-i-love-you-nails_959961-10692.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820448.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-nails_959961-10719.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/pink-blue-french-manicure-with-painted-clouds_1264676-34.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/woman-with-pink-nails-that-says-i-love-you-nails_959961-10692.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820448.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
 
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/woman-with-green-nails-that-says-word-nails_959961-10708.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/woman-with-long-nails-that-has-purple-manicure-her-nails_959961-10770.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/woman-with-green-nails-that-says-word-nails_959961-10708.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/woman-with-long-nails-that-has-purple-manicure-her-nails_959961-10770.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
 
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/pink-blue-french-manicure-with-painted-clouds_1264676-35.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-with-flower_23-2149820440.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/trendy-creative-nail-designs-every-style-stunning-nail-art-creations_1245763-78162.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/close-up-manicure-blue-background_926199-4207599.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-nails_959961-8244.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-top-right-corner_744810-306.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/pink-blue-french-manicure-with-painted-clouds_1264676-35.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-with-flower_23-2149820440.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/trendy-creative-nail-designs-every-style-stunning-nail-art-creations_1245763-78162.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/close-up-manicure-blue-background_926199-4207599.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-nails_959961-8244.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/woman-with-manicure-that-says-top-right-corner_744810-306.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
 
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-with-autumn-leaf_23-2149820396.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/beautiful-womans-hands-with-spring-summer-floral-nail-design_1190079-800.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-with-autumn-leaf_23-2149820396.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/beautiful-womans-hands-with-spring-summer-floral-nail-design_1190079-800.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
 
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820449.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/nl-polish-finger-make-up-beauty-cosmetic-leaking_1311477-151606.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/dramatic-stiletto-nails-with-pink-black-design-embodying-bold-fashion-edgy-sophistication_113876-14266.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/premium-photo/healthy-beautiful-manicure-with-cream_1336671-17056.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820447.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/healthy-beautiful-manicure-blossom-flowers_23-2148766553.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
-  },
-  {
-    category: "",
-    src: "https://img.freepik.com/free-photo/close-up-hand-with-french-model-nails_23-2149311564.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
-  },
-];
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820449.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/nl-polish-finger-make-up-beauty-cosmetic-leaking_1311477-151606.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/dramatic-stiletto-nails-with-pink-black-design-embodying-bold-fashion-edgy-sophistication_113876-14266.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/premium-photo/healthy-beautiful-manicure-with-cream_1336671-17056.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/woman-showing-her-nail-art-fingernails-against-monster-leaf_23-2149820447.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/healthy-beautiful-manicure-blossom-flowers_23-2148766553.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+//   },
+//   {
+//     category: "",
+//     src: "https://img.freepik.com/free-photo/close-up-hand-with-french-model-nails_23-2149311564.jpg?ga=GA1.2.1193873028.1726111514&semt=ais_hybrid",
+//   },
+// ];
 
 export const nailCategories = [
   { name: "Acrylic set", value: "acrylic" },
@@ -189,17 +189,18 @@ export const nailCategories = [
 ];
 
 export const nailsServicesAndPrices = [
-  { name: "STICK ON WITH GEL", price: "8000", category: "stick-on" },
-  { name: "ACRYLIC OVERLAY", price: "10 000", category: "acrylic" },
-  { name: "PLAIN ACRYLIC SET", price: "14 000", category: "acrylic" },
-  { name: "BIAB NAILS", price: "12 000", category: "biab" },
-  { name: "OMBRE/MARBLE", price: "18 000", category: "stick-on" },
-  { name: "INFILL", price: "10 000", category: "acrylic" },
+  { name: "STICK ON WITH GEL", price: "10 000", category: "stick-on" },
+  { name: "ACRYLIC OVERLAY", price: "13 000", category: "acrylic" },
+  { name: "PLAIN ACRYLIC SET", price: "15 000", category: "acrylic" },
+  { name: "FRENCH TIPS", price: "23 000", category: "acrylic" },
+  { name: "BIAB NAILS", price: "13 000", category: "biab" },
+  { name: "OMBRE/MARBLE", price: "20 000", category: "stick-on" },
+  { name: "INFILL", price: "15 000", category: "acrylic" },
   { name: "FIXING OF TOES", price: "8000", category: "gel" },
   { name: "FRENCH TIPS ON TOES", price: "10 000", category: "stick-on" },
   { name: "GEL POLISH ON HAND", price: "5000", category: "gel" },
   { name: "GEL POLISH ON TOES", price: "3000", category: "gel" },
-  { name: "BASIC MANICURE", price: "5000", category: "maintenance" },
+  { name: "BASIC MANICURE", price: "7000", category: "maintenance" },
   { name: "SOAK OFF", price: "3000", category: "maintenance" },
 ];
 
@@ -381,7 +382,7 @@ font-size:20px;
 export const stickOnNails = [
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_0432.JPG?alt=media&token=ad9cfc64-a977-4223-bf71-d6f76b3616f5",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_1741.JPG?alt=media&token=73afc2fe-032f-4e00-b48a-6175c575b469",
-  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2028.JPG?alt=media&token=65af9444-fff7-402a-9fb4-c96c8bff8458",
+
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2030.JPG?alt=media&token=71a6c39a-8ada-4c28-be14-9fc6f20c36df",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2135.JPG?alt=media&token=577baff7-b7d3-4e63-bc5a-e60dc790b9b9",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2259.JPG?alt=media&token=89a829a1-1333-465f-baa6-db7bf0dd5426",
@@ -398,6 +399,7 @@ export const stickOnNails = [
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_4440.JPG?alt=media&token=12b58ff2-b888-4317-9f92-9df82d6e2b84",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_4557.JPG?alt=media&token=12fbbc1d-5451-4c3c-9b89-dcc735d1a917",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_6224.JPG?alt=media&token=3a8884f9-0b12-4ce1-aa6b-4b6238dbd8ac",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2028.JPG?alt=media&token=65af9444-fff7-402a-9fb4-c96c8bff8458",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_6932.JPG?alt=media&token=70d3c5ca-0db6-4293-aa48-1fdde4322f61",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_7075.JPG?alt=media&token=46dee94c-4b36-4384-a622-c543851ce270",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_7648.JPG?alt=media&token=8cbc882f-f2d1-4b35-a5d9-1c358073c176",
@@ -406,8 +408,6 @@ export const stickOnNails = [
 
 export const acrylicNails = [
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_1387.JPG?alt=media&token=ea71c9de-8fc2-4866-8ffb-0e16909edc47",
-
-  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_1907.JPG?alt=media&token=01dd2245-a0c9-48ed-ab82-44bce38e4d58",
 
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2119.JPG?alt=media&token=576617ba-3b71-47df-b96e-e8bc9d7c2b90",
 
@@ -418,6 +418,7 @@ export const acrylicNails = [
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2624.JPG?alt=media&token=d335c278-f386-4540-aa13-24c4c5f627e5",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2753.JPG?alt=media&token=894c42a4-2300-4905-b917-86102d29f03b",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2770.JPG?alt=media&token=e9ddeaca-be43-4741-8890-1e2c3d640d46",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_1907.JPG?alt=media&token=01dd2245-a0c9-48ed-ab82-44bce38e4d58",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2776.JPG?alt=media&token=4a7d1f6e-bd0b-4c62-b582-a344a153e6d7",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2996.JPG?alt=media&token=7aa7eaee-0db5-4034-a607-26142e804bef",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3105.JPG?alt=media&token=8bfa1690-8d86-471c-82a6-9d0f751761f2",
@@ -441,4 +442,17 @@ export const acrylicNails = [
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_9167.JPG?alt=media&token=fab9d484-6a53-4ea6-b3c3-422431b9802b",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_9274.JPG?alt=media&token=10bbbbfe-af40-4a8a-b8ff-8d6ed5af02c9",
   "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_9297.JPG?alt=media&token=fabee677-09bc-4eb4-828e-b86715d90dca",
+];
+
+export const biabNails = [
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_2218.JPG?alt=media&token=52c8858b-f8b8-4f7d-9d2e-f7d97132d67a",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_2288.JPG?alt=media&token=284ce41f-3cdb-4110-b6b6-af2605818f8f",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_2621.JPG?alt=media&token=6c59ae7c-49f0-4b4d-8bb6-fc2b6ade0b7f",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_2801.JPG?alt=media&token=aa4da6ed-e2d1-475f-969d-f8d70e2f9b89",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_3887.JPG?alt=media&token=768baa87-febe-4f08-9bf3-fb6c233be47e",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_4124.jpg?alt=media&token=6da7a3f3-38b2-4083-9ae3-b4a1c3341bca",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_5352.jpg?alt=media&token=2d7abfe6-4ca3-4fdd-87bc-c2efbb32e221",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_5505.jpg?alt=media&token=9f713d3f-b874-4194-adf8-830a56116327",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_5628.jpg?alt=media&token=0e40bf32-5a7f-4532-90ed-99e47f14c3b9",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/biab%2FIMG_6320.jpg?alt=media&token=63f2359b-78c0-4671-8f2d-bdda654570c5",
 ];
