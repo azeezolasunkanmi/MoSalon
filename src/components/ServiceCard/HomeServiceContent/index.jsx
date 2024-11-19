@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const HomeServiceContent = () => {
   return (
     <div className="mb-10">
@@ -61,12 +59,14 @@ const HomeServiceContent = () => {
         </div>
       </div>
       <div className="flex justify-center my-4">
-        <Link
-          to="/booknow"
+        <a
+          href="https://wa.me/2348029269259"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-center py-4 px-6 text-[18px] font-semibold font-poppins bg-primary rounded-md text-tertiary hover:bg-primary"
         >
           BOOK HOME SERVICE
-        </Link>
+        </a>
       </div>
     </div>
   );

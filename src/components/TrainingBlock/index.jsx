@@ -10,9 +10,14 @@ const TrainingBlock = ({ title, price, duration, outline }) => {
           &#8358; {price}
         </h1>
         <p className="text-darkPrimary">{duration}</p>
-        <button className="bg-primary px-6 py-4 rounded-md font-semibold">
+        <a
+          href="https://wa.me/2348029269259"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-primary px-6 py-4 rounded-md font-semibold text-center"
+        >
           Get Started
-        </button>
+        </a>
       </div>
       <div className="border-t border-primary pt-8 text-tertiary">
         {/* <p className="my-6 text-tertiary text-[18px] font-semibold">

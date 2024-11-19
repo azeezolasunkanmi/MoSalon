@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { storage } from "../firebase";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { ref, uploadBytes, getDownloadURL, listAll } from "firebase/storage";
 import { db } from "../firebase";
 import {
   addDoc,
@@ -32,6 +32,7 @@ export const BookingContextProvider = ({ children }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [allOrders, setAllOrders] = useState([]);
   const [order, setOrder] = useState(initialOrderState);
+  const [stickOnImageUrls, setStickOnImageUrls] = useState([]);
   const ordersCollectionRef = collection(db, "orders");
 
   const storeImage = async () => {
@@ -60,6 +61,30 @@ export const BookingContextProvider = ({ children }) => {
   const addOrders = async data => {
     await addDoc(ordersCollectionRef, data);
   };
+
+  // Function to fetch all image URLs from firebase
+  const fetchAllImages = async folderPath => {
+    const folderRef = ref(storage, folderPath); // Reference to the folder
+    const urls = []; // Array to store the image URLs
+
+    try {
+      const result = await listAll(folderRef); // List all items in the folder
+
+      // Loop through each item and get its URL
+      for (const itemRef of result.items) {
+        const url = await getDownloadURL(itemRef);
+        urls.push(url);
+      }
+
+      return urls; // Return array of image URLs
+    } catch (error) {
+      console.error("Error fetching images:", error);
+      return [];
+    }
+  };
+
+  // Usage
+  useEffect(() => {}, []);
 
   const getOrders = async () => {
     try {
@@ -128,6 +153,9 @@ export const BookingContextProvider = ({ children }) => {
 
   useEffect(() => {
     getOrders();
+    fetchAllImages("stickOn").then(urls => {
+      setStickOnImageUrls(urls); // Array of image URLs
+    });
   }, []);
 
   return (
@@ -142,6 +170,7 @@ export const BookingContextProvider = ({ children }) => {
         getDisabledDays,
         groupOrdersByDateStamp,
         updateUser,
+        stickOnImageUrls,
       }}
     >
       {children}
