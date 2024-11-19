@@ -83,9 +83,6 @@ export const BookingContextProvider = ({ children }) => {
     }
   };
 
-  // Usage
-  useEffect(() => {}, []);
-
   const getOrders = async () => {
     try {
       const data = await getDocs(ordersCollectionRef);
@@ -153,8 +150,9 @@ export const BookingContextProvider = ({ children }) => {
 
   useEffect(() => {
     getOrders();
-    fetchAllImages("stickOn").then(urls => {
+    fetchAllImages("acrylic").then(urls => {
       setStickOnImageUrls(urls); // Array of image URLs
+      console.log(urls);
     });
   }, []);
 

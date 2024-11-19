@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Gallery from "../Gallery";
+import { acrylicNails } from "../../constants";
 const Inspo = () => {
   return (
     <div>
@@ -11,7 +12,7 @@ const Inspo = () => {
       <p className="text-center text-[18px] font-medium text-tertiary font-poppins mt-2 p-4">
         Explore our collection. Swipe left for more nail inspo 🩷
       </p>
-      <Gallery />
+      <Gallery imageArray={acrylicNails} />
 
       <div className="px-12 flex flex-col md:flex-row justify-center gap-4 mb-20">
         <Link

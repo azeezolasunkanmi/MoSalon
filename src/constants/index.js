@@ -293,27 +293,27 @@ export const weekdays = [
 export const bookingTimes = [
   {
     id: 1,
-    time: "9:30am",
+    time: "9:00am",
   },
   {
     id: 2,
-    time: "10:30am",
+    time: "11:00am",
   },
   {
     id: 3,
-    time: "11:30am",
+    time: "1:00pm",
   },
   {
     id: 4,
-    time: "12:30pm",
+    time: "3:00pm",
   },
   {
     id: 5,
-    time: "1:30pm",
+    time: "5:00pm",
   },
   {
     id: 6,
-    time: "2:30pm",
+    time: "7:00pm",
   },
 ];
 
@@ -378,33 +378,67 @@ font-size:20px;
 }
 `;
 
-// export const allBookings = [
-//   { day: "09-07-2924", time: ["9am", "12pm", "2pm"] },
-//   { day: "08-07-2924", time: ["9am", "12pm", "2pm", "5pm"] },
-//   { day: "07-07-2924", time: ["12pm", "2pm"] },
-// ];
+export const stickOnNails = [
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_0432.JPG?alt=media&token=ad9cfc64-a977-4223-bf71-d6f76b3616f5",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_1741.JPG?alt=media&token=73afc2fe-032f-4e00-b48a-6175c575b469",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2028.JPG?alt=media&token=65af9444-fff7-402a-9fb4-c96c8bff8458",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2030.JPG?alt=media&token=71a6c39a-8ada-4c28-be14-9fc6f20c36df",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2135.JPG?alt=media&token=577baff7-b7d3-4e63-bc5a-e60dc790b9b9",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2259.JPG?alt=media&token=89a829a1-1333-465f-baa6-db7bf0dd5426",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2307.JPG?alt=media&token=1d62e5ac-d5c4-45e9-ba9b-2961c1bb708a",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2362.JPG?alt=media&token=cb5b04ad-b475-444e-b964-7c6a7139c190",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_2877.JPG?alt=media&token=3f989c13-29ee-41e4-b394-7517c5079dc3",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_3021.JPG?alt=media&token=ba579a11-bb5c-4536-83c2-de3289899dba",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_3089.JPG?alt=media&token=55c6b743-76be-493a-a52d-cc597974c545",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_3535.JPG?alt=media&token=b990ccab-a8d8-413c-bd4e-fec9d348ecce",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_3583.JPG?alt=media&token=de4cdf79-f0c7-409b-bc93-736afd6d5964",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_3761.JPG?alt=media&token=c069ef01-d35a-41a0-8c98-f1f112deff65",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_3922.JPG?alt=media&token=8612076e-4b71-4145-a061-8be5bdecf08e",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_4221.JPG?alt=media&token=c86c1b4b-458f-430b-ad8b-63cfc1a94d0a",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_4440.JPG?alt=media&token=12b58ff2-b888-4317-9f92-9df82d6e2b84",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_4557.JPG?alt=media&token=12fbbc1d-5451-4c3c-9b89-dcc735d1a917",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_6224.JPG?alt=media&token=3a8884f9-0b12-4ce1-aa6b-4b6238dbd8ac",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_6932.JPG?alt=media&token=70d3c5ca-0db6-4293-aa48-1fdde4322f61",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_7075.JPG?alt=media&token=46dee94c-4b36-4384-a622-c543851ce270",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_7648.JPG?alt=media&token=8cbc882f-f2d1-4b35-a5d9-1c358073c176",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/stickOn%2FIMG_8443.JPG?alt=media&token=cbf9a1e6-aa94-4650-9e19-b7ba3ee91d7d",
+];
 
-// export const orders = [
-//   {
-//     name: "",
-//     category: "",
-//     inspo: true,
-//     inspoImage: "",
-//     service: "",
-//     note: "",
-//     date: "",
-//     time: "",
-//     status: "",
-//   },
-//   {
-//     name: "",
-//     category: "",
-//     inspo: false,
-//     inspoImage: "",
-//     service: "",
-//     note: "",
-//     date: "",
-//     time: "",
-//     status: "",
-//   },
-// ];
+export const acrylicNails = [
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_1387.JPG?alt=media&token=ea71c9de-8fc2-4866-8ffb-0e16909edc47",
+
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_1907.JPG?alt=media&token=01dd2245-a0c9-48ed-ab82-44bce38e4d58",
+
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2119.JPG?alt=media&token=576617ba-3b71-47df-b96e-e8bc9d7c2b90",
+
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2354.JPG?alt=media&token=bfe34662-3f07-4439-ac84-086046b715f7",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2401.JPG?alt=media&token=584d4cee-6fe9-4fc3-8f3f-d2ae8b7d06df",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2469.JPG?alt=media&token=f4f584c3-0f9f-48b4-aa8a-1c8a366da7d0",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2505.JPG?alt=media&token=48263ad0-0017-48b8-94b7-ef198eb49a1d",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2624.JPG?alt=media&token=d335c278-f386-4540-aa13-24c4c5f627e5",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2753.JPG?alt=media&token=894c42a4-2300-4905-b917-86102d29f03b",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2770.JPG?alt=media&token=e9ddeaca-be43-4741-8890-1e2c3d640d46",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2776.JPG?alt=media&token=4a7d1f6e-bd0b-4c62-b582-a344a153e6d7",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_2996.JPG?alt=media&token=7aa7eaee-0db5-4034-a607-26142e804bef",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3105.JPG?alt=media&token=8bfa1690-8d86-471c-82a6-9d0f751761f2",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3291.JPG?alt=media&token=000fb95f-2a62-4901-812b-d82682fe19e2",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3328.JPG?alt=media&token=f0342992-6bb5-4810-a0a5-e69ac44298d8",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3484.JPG?alt=media&token=aea896aa-1060-4391-b2e1-25f2f9ba2f3c",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3602.JPG?alt=media&token=1209b100-f5b2-4df9-bddf-d264af345e80",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3732.JPG?alt=media&token=a918de8e-74a3-43fe-ac5f-f01599201ef4",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3898.JPG?alt=media&token=b621f685-b288-4338-a26c-5b973b5490f8",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_3963.JPG?alt=media&token=087bdd46-a822-457b-a395-b8039e42961e",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_6841.JPG?alt=media&token=ac950e69-8cdc-43fd-9f2e-653d087f2f32",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_6975.JPG?alt=media&token=cb6a0baa-5299-419d-ad8b-10a44ebe5bf7",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_7067.JPG?alt=media&token=629ed869-fa12-48d8-97b8-479831a3cf3d",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_7450.JPG?alt=media&token=b6d6f457-083f-4b53-aaba-6be8ed8713ab",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_7520.JPG?alt=media&token=ac9bdd4a-ebc4-41f6-a931-76117d703bdf",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_7847.JPG?alt=media&token=a0c9018e-a465-4932-a877-1d6192bfe3e9",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_8020.JPG?alt=media&token=165ec3f9-fc3a-4296-b776-fc1c11429681",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_8128.JPG?alt=media&token=b8aca250-d425-45e7-8820-ca419118f0dd",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_8683.JPG?alt=media&token=13a92631-b805-4829-9a0c-3568b5a780aa",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_8727.JPG?alt=media&token=c6adf10d-62fe-4560-84fb-5964ae2b7fd3",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_9167.JPG?alt=media&token=fab9d484-6a53-4ea6-b3c3-422431b9802b",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_9274.JPG?alt=media&token=10bbbbfe-af40-4a8a-b8ff-8d6ed5af02c9",
+  "https://firebasestorage.googleapis.com/v0/b/polishmebymo.appspot.com/o/acrylic%2FIMG_9297.JPG?alt=media&token=fabee677-09bc-4eb4-828e-b86715d90dca",
+];

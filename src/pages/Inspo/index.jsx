@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer";
 import Gallery from "../../components/Gallery";
 import PageHeader from "../../components/PageHeader";
+import { stickOnNails, acrylicNails } from "../../constants";
 
 const Inspo = () => {
   return (
@@ -14,19 +15,20 @@ const Inspo = () => {
         <h2 className="px-2 m-4 md:mx-10 lg:text-[62px] font-amatic font-bold text-[42px] text-tertiary border-l-8 border-darkPrimary">
           Acrylic
         </h2>
-        <Gallery />
-        <h2 className="px-2 m-4 md:mx-10 lg:text-[62px] font-amatic font-bold text-[42px] text-tertiary border-l-8 border-darkPrimary">
-          Gel Polish
-        </h2>
-        <Gallery />
+        <Gallery imageArray={acrylicNails} />
+
         <h2 className="px-2 m-4 md:mx-10 lg:text-[62px] font-amatic font-bold text-[42px] text-tertiary border-l-8 border-darkPrimary">
           Stick ON
         </h2>
-        <Gallery />
+        <Gallery imageArray={stickOnNails} />
+        <h2 className="px-2 m-4 md:mx-10 lg:text-[62px] font-amatic font-bold text-[42px] text-tertiary border-l-8 border-darkPrimary">
+          Gel Polish
+        </h2>
+        <Gallery imageArray={stickOnNails} />
         <h2 className="px-2 m-4 md:mx-10 lg:text-[62px] font-amatic font-bold text-[42px] text-tertiary border-l-8 border-darkPrimary">
           Biab Nails
         </h2>
-        <Gallery />
+        <Gallery imageArray={acrylicNails} />
       </div>
 
       <Footer />
