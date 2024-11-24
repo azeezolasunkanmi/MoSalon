@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import PropTypes from "prop-types";
 
-const Hero = ({ title1, title2, description, image }) => {
+const Hero = ({ title1, title2, description, image, isTransitioning }) => {
   return (
     <div className="h-[85vh] relative">
       <img
@@ -13,15 +13,19 @@ const Hero = ({ title1, title2, description, image }) => {
       />
       <div className="h-full relative flex items-center justify-start z-50 px-4 lg:px-10 xl:px-28">
         <motion.section
-          initial={{ x: -50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            type: "spring",
-            stiffness: 60,
-            ease: "easeIn",
-            duration: 1,
-          }}
+          initial={isTransitioning ? { x: 0, opacity: 0 } : false}
+          whileInView={isTransitioning ? { x: 0, opacity: 1 } : {}}
+          transition={
+            isTransitioning
+              ? {
+                  delay: 0.1,
+                  type: "spring",
+                  stiffness: 60,
+                  ease: "easeIn",
+                  duration: 1,
+                }
+              : {}
+          }
         >
           <div className="text-[50px] leading-[60px] lg:text-[72px] lg:leading-[80px] text-secondary">
             <h2>{title1}</h2>
@@ -46,6 +50,7 @@ Hero.propTypes = {
   title1: PropTypes.string.isRequired,
   title2: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  isTransitioning: PropTypes.bool.isRequired,
   image: PropTypes.node.isRequired,
 };
 

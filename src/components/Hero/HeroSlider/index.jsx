@@ -45,6 +45,7 @@ const HeroSlider = () => {
         {heroContent.map((content, i) => (
           <div key={i} className="w-full flex-shrink-0">
             <Hero
+              isTransitioning={isTransitioning}
               title1={content?.title1}
               title2={content?.title2}
               description={content?.description}
@@ -56,6 +57,7 @@ const HeroSlider = () => {
         {/* Clone the first slide to the end for infinite scroll effect */}
         <div className="w-full flex-shrink-0">
           <Hero
+            isTransitioning={isTransitioning}
             title1={heroContent[0]?.title1}
             title2={heroContent[0]?.title2}
             description={heroContent[0]?.description}

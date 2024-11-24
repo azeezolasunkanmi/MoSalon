@@ -28,16 +28,16 @@ const AboutUS = () => {
               comfortable experience for our clients. We call these standards
               the Pure in Heart Promise.
             </p>
-            <p className="text-tertiary">We always promise to:</p>
-            <ul className="text-tertiary">
+            <p className="text-tertiary font-semibold">We always promise to:</p>
+            <ul className="text-tertiary font-semibold">
               <li>&gt; Deliver consistent and best customer service</li>
               <li>&gt; Use products of the highest quality</li>
               <li>
                 &gt; Maintain the highest standards for safety and cleanliness
               </li>
-              <li>&gt; Resolve and unsatisfactory experience immediately</li>
+              <li>&gt; Resolve any unsatisfactory experience immediately</li>
             </ul>
-            <p className="py-2 border-b-4 border-lightPrimary w-[150px] uppercase text-darkPrimary">
+            <p className="py-2 border-b-4 border-lightPrimary w-[150px] uppercase text-darkPrimary font-semibold">
               Connect with us
             </p>
             <div className="flex gap-6">

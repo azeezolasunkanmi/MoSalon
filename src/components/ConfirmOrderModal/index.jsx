@@ -137,7 +137,9 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
         await addOrders(order);
         await sender();
         await sender2();
-        alert("Your order is currently awaiting confirmation");
+        alert(
+          "Your appointment is awaiting confirmation. We will send you a text message on the number you provided once your payment is verified and the appointment is confirmed"
+        );
         setIsLoading(false);
         setOrder(initialOrderState);
         navigate("/");
