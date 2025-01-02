@@ -192,7 +192,7 @@ export const nailsServicesAndPrices = [
   { name: "STICK ON WITH GEL", price: "10 000", category: "stick-on" },
   { name: "ACRYLIC OVERLAY", price: "13 000", category: "acrylic" },
   { name: "PLAIN ACRYLIC SET", price: "15 000", category: "acrylic" },
-  { name: "FRENCH TIPS", price: "23 000", category: "acrylic" },
+  { name: "FRENCH TIPS", price: "25 000", category: "acrylic" },
   { name: "BIAB NAILS", price: "13 000", category: "biab" },
   { name: "OMBRE/MARBLE", price: "20 000", category: "stick-on" },
   { name: "INFILL", price: "15 000", category: "acrylic" },

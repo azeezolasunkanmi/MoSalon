@@ -38,7 +38,7 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>FRENCH TIPS</p>
-              <p>&#8358; 23, 000</p>
+              <p>&#8358; 25, 000</p>
             </div>
 
             <div className="flex justify-between">
@@ -100,7 +100,7 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>CHROME</p>
-              <p>&#8358; 700/FINGER</p>
+              <p>&#8358; 1000/FINGER</p>
             </div>
 
             <div className="flex justify-between">
