@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ServiceCard from "../../components/ServiceCard";
+// import ServiceCard from "../../components/ServiceCard";
 import StudioContent from "../../components/ServiceCard/StudioContent";
 import HomeServiceContent from "../../components/ServiceCard/HomeServiceContent";
 import TrainingContent from "../../components/ServiceCard/TrainingContent";
@@ -20,7 +20,7 @@ const ServicesPage = () => {
           bring out the best in your nails 🩷."
       />
 
-      <div className="p-8 md:flex justify-center gap-10 bg-lightPrimary  px-4 lg:px-10 xl:px-28">
+      {/* <div className="hidden p-8 md:flex justify-center gap-10 bg-lightPrimary  px-4 lg:px-10 xl:px-28">
         <ServiceCard
           screen={screen}
           setScreen={setScreen}
@@ -42,6 +42,32 @@ const ServicesPage = () => {
           title="TRAINING"
           src="https://img.freepik.com/premium-photo/manicure-nail-technician-course-training_1048944-3281197.jpg?ga=GA1.1.1193873028.1726111514&semt=ais_hybrid"
         />
+      </div> */}
+      <div className="flex justify-center items-center gap-4 md:gap-8 border-b border-darkPrimary max-w-[1024px] mx-auto mb-2 font-medium md:text-[18px]">
+        <h2
+          className={`${
+            screen === "studio" ? "border-b-4 border-darkPrimary" : ""
+          } p-2 cursor-pointer shrink-0`}
+          onClick={() => setScreen("studio")}
+        >
+          Studio Session
+        </h2>
+        <h2
+          className={`${
+            screen === "home" ? "border-b-4 border-darkPrimary" : ""
+          } p-2 cursor-pointer shrink-0`}
+          onClick={() => setScreen("home")}
+        >
+          Home Service
+        </h2>
+        <h2
+          className={`${
+            screen === "training" ? "border-b-4 border-darkPrimary" : ""
+          } p-2 cursor-pointer shrink-0`}
+          onClick={() => setScreen("training")}
+        >
+          Training
+        </h2>
       </div>
       <div className="">
         {screen === "studio" && <StudioContent />}

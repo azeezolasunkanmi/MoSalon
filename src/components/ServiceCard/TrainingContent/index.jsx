@@ -10,7 +10,7 @@ const TrainingContent = () => {
           latest techniques, from intricate designs to advanced nail care, and
           unlock your potential in the exciting world of beauty.
         </p>
-        <p className="w-[100px] h-[5px] mx-auto bg-darkPrimary"></p>
+        {/* <p className="w-[100px] h-[5px] mx-auto bg-darkPrimary"></p> */}
       </div>
       <div className="p-8 mt-10 md:flex justify-center gap-10 bg-lightPrimary lg:p-12 xl:px-32">
         <div className="flex gap-4 md:w-[30%] lg:w-[30%] shrink-0 mb-10">

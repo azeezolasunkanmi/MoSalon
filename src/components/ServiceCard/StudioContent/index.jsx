@@ -10,7 +10,7 @@ const StudioContent = () => {
           Whether you&apos;re here for a bold new look or a subtle refresh, we
           are here to make sure you leave feeling confident and fabulous.
         </p>
-        <p className="w-[100px] h-[5px] mx-auto bg-darkPrimary"></p>
+        {/* <p className="w-[100px] h-[5px] mx-auto bg-darkPrimary"></p> */}
       </div>
       <div className="p-8 mt-10 md:flex justify-center flex-wrap gap-10 bg-lightPrimary lg:p-12 xl:px-32">
         <div className="flex h-[100px] gap-4 overflow-hidden rounded-md md:w-[45%] lg:w-[30%] shrink-0 mb-10">
