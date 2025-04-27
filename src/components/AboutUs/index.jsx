@@ -1,4 +1,4 @@
-import pic from "../../assets/aboutUs/working.png";
+import pic from "../../assets/aboutUs/working1.jpg";
 import ServiceCard from "../Services/ServiceCard";
 import { servicesContent } from "../../constants";
 import { FaWhatsapp, FaTiktok, FaInstagram, FaFacebookF } from "react-icons/fa";
