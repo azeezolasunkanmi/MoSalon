@@ -185,6 +185,7 @@ export const nailCategories = [
   { name: "Gel polish", value: "gel" },
   { name: "Stick On", value: "stick-on" },
   { name: "Biab nails", value: "biab" },
+  { name: "Gel X", value: "gel-x" },
   { name: "Maintenance", value: "maintenance" },
 ];
 
@@ -193,8 +194,9 @@ export const nailsServicesAndPrices = [
   { name: "ACRYLIC OVERLAY", price: "13 000", category: "acrylic" },
   { name: "PLAIN ACRYLIC SET", price: "15 000", category: "acrylic" },
   { name: "FRENCH TIPS", price: "25 000", category: "acrylic" },
-  { name: "BIAB NAILS", price: "13 000", category: "biab" },
-  { name: "OMBRE/MARBLE", price: "20 000", category: "stick-on" },
+  { name: "BIAB NAILS", price: "15 000", category: "biab" },
+  { name: "GEL X", price: "15 000", category: "gel-x" },
+  { name: "OMBRE/MARBLE", price: "25 000", category: "stick-on" },
   { name: "INFILL", price: "15 000", category: "acrylic" },
   { name: "FIXING OF TOES", price: "8000", category: "gel" },
   { name: "FRENCH TIPS ON TOES", price: "10 000", category: "stick-on" },

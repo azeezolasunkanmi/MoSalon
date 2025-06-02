@@ -186,6 +186,14 @@ const BookingForm = ({ setOpenModal }) => {
                           {cat.name} (&#8358;{cat.price})
                         </option>
                       ))}
+                  {order.category === "gel-x" &&
+                    nailsServicesAndPrices
+                      .filter(service => service.category === "gel-x")
+                      .map((cat, i) => (
+                        <option key={i} value={cat.name}>
+                          {cat.name} (&#8358;{cat.price})
+                        </option>
+                      ))}
                   {order.category === "maintenance" &&
                     nailsServicesAndPrices
                       .filter(service => service.category === "maintenance")
