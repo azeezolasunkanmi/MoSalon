@@ -74,16 +74,16 @@ const PriceList = () => {
           <div className="text-tertiary flex flex-col gap-4 mb-8 lg:text-[18px]">
             <div className="flex justify-between">
               <p>GEL POLISH ON HAND</p>
-              <p>&#8358; 5000</p>
+              <p>&#8358; 6000</p>
             </div>
             <div className="flex justify-between">
               <p>GEL POLISH ON TOES</p>
-              <p>&#8358; 3000</p>
+              <p>&#8358; 4000</p>
             </div>
 
             <div className="flex justify-between">
               <p>BASIC MANICURE</p>
-              <p>&#8358; 7000</p>
+              <p>&#8358; 8000</p>
             </div>
           </div>
         </div>
