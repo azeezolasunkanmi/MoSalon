@@ -200,9 +200,9 @@ export const nailsServicesAndPrices = [
   { name: "INFILL", price: "15 000", category: "acrylic" },
   { name: "FIXING OF TOES", price: "8000", category: "gel" },
   { name: "FRENCH TIPS ON TOES", price: "10 000", category: "stick-on" },
-  { name: "GEL POLISH ON HAND", price: "5000", category: "gel" },
-  { name: "GEL POLISH ON TOES", price: "3000", category: "gel" },
-  { name: "BASIC MANICURE", price: "7000", category: "maintenance" },
+  { name: "GEL POLISH ON HAND", price: "6000", category: "gel" },
+  { name: "GEL POLISH ON TOES", price: "4000", category: "gel" },
+  { name: "BASIC MANICURE", price: "8000", category: "maintenance" },
   { name: "SOAK OFF", price: "3000", category: "maintenance" },
 ];
 
