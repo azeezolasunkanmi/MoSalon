@@ -17,15 +17,15 @@ const PriceList = () => {
           <div className="text-tertiary flex flex-col gap-4 mb-8 lg:text-[18px]">
             <div className="flex justify-between">
               <p>STICK ON WITH GEL</p>
-              <p>&#8358; 10, 000</p>
-            </div>
-            <div className="flex justify-between">
-              <p>ACRYLIC OVERLAY</p>
               <p>&#8358; 13, 000</p>
             </div>
             <div className="flex justify-between">
-              <p>PLAIN ACRYLIC SET</p>
+              <p>ACRYLIC OVERLAY</p>
               <p>&#8358; 15, 000</p>
+            </div>
+            <div className="flex justify-between">
+              <p>PLAIN ACRYLIC SET</p>
+              <p>&#8358; 18, 000</p>
             </div>
             <div className="flex justify-between">
               <p>BIAB NAILS</p>
@@ -41,16 +41,16 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>FRENCH TIPS</p>
-              <p>&#8358; 25, 000</p>
+              <p>&#8358; 28, 000</p>
             </div>
 
             <div className="flex justify-between">
               <p>INFILL</p>
-              <p>&#8358; 15, 000</p>
+              <p>&#8358; 18, 000</p>
             </div>
             <div className="flex justify-between">
               <p>LONG</p>
-              <p>&#8358; 1500</p>
+              <p>&#8358; 2000</p>
             </div>
             <div className="flex justify-between">
               <p>XL</p>
@@ -78,7 +78,7 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>GEL POLISH ON TOES</p>
-              <p>&#8358; 4000</p>
+              <p>&#8358; 5000</p>
             </div>
 
             <div className="flex justify-between">
@@ -116,7 +116,7 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>3D DESIGN</p>
-              <p>&#8358; 2000/FINGER</p>
+              <p>&#8358; 1500/FINGER</p>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ const PriceList = () => {
           <div className="text-tertiary flex flex-col gap-4 mb-8 lg:text-[18px]">
             <div className="flex justify-between">
               <p>SOAK OFF</p>
-              <p>&#8358; 3000</p>
+              <p>&#8358; 4000</p>
             </div>
           </div>
         </div>

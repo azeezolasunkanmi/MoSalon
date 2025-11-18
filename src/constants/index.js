@@ -190,20 +190,20 @@ export const nailCategories = [
 ];
 
 export const nailsServicesAndPrices = [
-  { name: "STICK ON WITH GEL", price: "10 000", category: "stick-on" },
-  { name: "ACRYLIC OVERLAY", price: "13 000", category: "acrylic" },
-  { name: "PLAIN ACRYLIC SET", price: "15 000", category: "acrylic" },
-  { name: "FRENCH TIPS", price: "25 000", category: "acrylic" },
+  { name: "STICK ON WITH GEL", price: "13 000", category: "stick-on" },
+  { name: "ACRYLIC OVERLAY", price: "15 000", category: "acrylic" },
+  { name: "PLAIN ACRYLIC SET", price: "18 000", category: "acrylic" },
+  { name: "FRENCH TIPS", price: "28 000", category: "acrylic" },
   { name: "BIAB NAILS", price: "15 000", category: "biab" },
   { name: "GEL X", price: "15 000", category: "gel-x" },
   { name: "OMBRE/MARBLE", price: "25 000", category: "stick-on" },
-  { name: "INFILL", price: "15 000", category: "acrylic" },
+  { name: "INFILL", price: "18 000", category: "acrylic" },
   { name: "FIXING OF TOES", price: "8000", category: "gel" },
   { name: "FRENCH TIPS ON TOES", price: "10 000", category: "stick-on" },
   { name: "GEL POLISH ON HAND", price: "6000", category: "gel" },
-  { name: "GEL POLISH ON TOES", price: "4000", category: "gel" },
+  { name: "GEL POLISH ON TOES", price: "5000", category: "gel" },
   { name: "BASIC MANICURE", price: "8000", category: "maintenance" },
-  { name: "SOAK OFF", price: "3000", category: "maintenance" },
+  { name: "SOAK OFF", price: "4000", category: "maintenance" },
 ];
 
 // TRAINING CATEGORY
