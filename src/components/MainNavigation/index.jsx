@@ -49,7 +49,7 @@ const MainNavigation = () => {
             {navLinks.map(link => (
               <span
                 key={link.id}
-                className={`w-full p-2 ${
+                className={`w-full p-2 text-center ${
                   link.id === "booknow"
                     ? "bg-primary rounded hover:bg-[#ffc2cd]"
                     : ""
