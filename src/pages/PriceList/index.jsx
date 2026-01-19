@@ -25,11 +25,11 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>PLAIN ACRYLIC SET</p>
-              <p>&#8358; 18, 000</p>
+              <p>&#8358; 20, 000</p>
             </div>
             <div className="flex justify-between">
               <p>BIAB NAILS</p>
-              <p>&#8358; 15, 000</p>
+              <p>&#8358; 20, 000</p>
             </div>
             <div className="flex justify-between">
               <p>GEL X</p>
@@ -59,11 +59,11 @@ const PriceList = () => {
 
             <div className="flex justify-between">
               <p>FIXING OF TOES</p>
-              <p>&#8358; 8000</p>
+              <p>&#8358; 10, 000</p>
             </div>
             <div className="flex justify-between">
               <p>FRENCH TIPS ON TOES</p>
-              <p>&#8358; 10, 000</p>
+              <p>&#8358; 12, 000</p>
             </div>
           </div>
         </div>
