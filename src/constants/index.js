@@ -211,7 +211,7 @@ export const nailsServicesAndPrices = [
 export const training = [
   {
     title: "Express",
-    price: "100, 000",
+    price: "150, 000",
     duration: "4 weeks",
     outline: [
       "Intro to nail products/tools",
@@ -235,7 +235,7 @@ export const training = [
   },
   {
     title: "Standard",
-    price: "200, 000",
+    price: "250, 000",
     duration: "8 weeks",
     outline: [
       "Intro to nail products/tools",
@@ -266,7 +266,7 @@ export const training = [
   },
   {
     title: "Upgrade",
-    price: "100, 000",
+    price: "200, 000",
     duration: "2 weeks",
     outline: [
       "Gel Polish Application",
