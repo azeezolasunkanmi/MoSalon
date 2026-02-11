@@ -73,7 +73,7 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
             chat_id: chat_id,
             text: message,
           }),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -116,7 +116,7 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
             chat_id: chat_id,
             text: message,
           }),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -138,7 +138,7 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
         await sender();
         await sender2();
         alert(
-          "Your appointment is awaiting confirmation. We will send you a text message on the number you provided once your payment is verified and the appointment is confirmed"
+          "Your appointment is awaiting confirmation. We will send you a text message on the number you provided once your payment is verified and the appointment is confirmed",
         );
         setIsLoading(false);
         setOrder(initialOrderState);
@@ -150,7 +150,7 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
       setIsLoading(false);
       console.error("An error occurred while submitting the order:", error);
       alert(
-        "There was an issue submitting your order. Please try again later."
+        "There was an issue submitting your order. Please try again later.",
       );
     }
   };
@@ -221,7 +221,9 @@ const ConfirmOrderModal = ({ openModal, onClose }) => {
 
           <p className="mt-10 font-semibold text-tertiary">
             You must make an initial deposit of at least{" "}
-            <span className="text-darkPrimary font-semibold">&#8358;5000 </span>{" "}
+            <span className="text-darkPrimary font-semibold">
+              &#8358;10,000{" "}
+            </span>{" "}
             to confirm your booking.
           </p>
           {/* <p className=" mt-4">
