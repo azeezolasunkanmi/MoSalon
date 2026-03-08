@@ -17,11 +17,11 @@ const PriceList = () => {
           <div className="text-tertiary flex flex-col gap-4 mb-8 lg:text-[18px]">
             <div className="flex justify-between">
               <p>STICK ON WITH GEL</p>
-              <p>&#8358; 13, 000</p>
+              <p>&#8358; 15, 000</p>
             </div>
             <div className="flex justify-between">
               <p>ACRYLIC OVERLAY</p>
-              <p>&#8358; 15, 000</p>
+              <p>&#8358; 17, 000</p>
             </div>
             <div className="flex justify-between">
               <p>PLAIN ACRYLIC SET</p>
@@ -33,7 +33,7 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>GEL X</p>
-              <p>&#8358; 15, 000</p>
+              <p>&#8358; 17, 000</p>
             </div>
             <div className="flex justify-between">
               <p>OMBRE/MARBLE</p>
@@ -41,7 +41,7 @@ const PriceList = () => {
             </div>
             <div className="flex justify-between">
               <p>FRENCH TIPS</p>
-              <p>&#8358; 28, 000</p>
+              <p>&#8358; 30, 000</p>
             </div>
 
             <div className="flex justify-between">
@@ -127,7 +127,7 @@ const PriceList = () => {
           <div className="text-tertiary flex flex-col gap-4 mb-8 lg:text-[18px]">
             <div className="flex justify-between">
               <p>SOAK OFF</p>
-              <p>&#8358; 4000</p>
+              <p>&#8358; 5000</p>
             </div>
           </div>
         </div>
