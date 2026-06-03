@@ -11,7 +11,7 @@ const Policy = () => {
           APPOINTMENT CAN BE DONE VIA ANY OF OUR SOCIAL MEDIA PAGES
         </p>
         <p className="text-[18px] font-poppins text-tertiary lg:text-[22px]">
-          A NON REFUNDABLE DEPOSIT OF #5OOO IS REQUIRED TO BOOK AN APPOINTMENT
+          A NON REFUNDABLE DEPOSIT OF #10,OOO IS REQUIRED TO BOOK AN APPOINTMENT
         </p>
         <p className="text-[18px] font-poppins text-tertiary lg:text-[22px]">
           THERE WILL BE A GRACE OF 15MINS LATENESS. IF YOU&apos;RE MORE THAN
